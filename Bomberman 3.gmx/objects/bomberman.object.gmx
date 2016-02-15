@@ -35,12 +35,9 @@ image_speed = 0;
 global.panels = 0;
 global.deadEnemy = 0;
 placingbomb = false;
-global.maxbombs = 1;
-global.bombsAvailable = 1;
 global.speedup = false;
-global.maxbombup = false;
-global.blastradiusup = false;
-global.blastradius = 1;
+
+
 </string>
           </argument>
         </arguments>
@@ -122,7 +119,7 @@ if (alive)
     }
 
 //Self-Explosion
-if !alive
+if !alive 
 {
     if sprite_index = spr_Bomberman_Hit
     {
@@ -130,24 +127,46 @@ if !alive
         {
             if image_index &gt; image_number - 1 
             {
-            image_speed=0; room_restart()
+                image_speed=0;
+                global.bomberlives -= 1;
+                if global.bomberlives &gt;= 0
+                {
+                    room_goto(Stage_1_Start)
+                }
+                else
+                {
+                    show_message("Woops.....GAME OVER!")
+                    game_restart()
+                }
+            }
+        }
+    }
+}
+//Enemy Hit Death
+if !alive 
+{
+    if sprite_index = spr_Bomberman_EnemyHit
+    {
+        if image_speed &gt; 0
+        {
+            if image_index &gt; image_number - 1
+            {
+                image_speed = 0
+                global.bomberlives -= 1;
+                if global.bomberlives &gt;= 0
+                {
+                    room_goto(Stage_1_Start)
+                }
+                else
+                {
+                    show_message("Woops.....GAME OVER!")
+                    game_restart()
+                }
             }
         }
     }
 }
 
-//Enemy Hit Death
-if sprite_index = spr_Bomberman_EnemyHit
-{
-    if image_speed &gt; 0
-    {
-        if image_index &gt; image_number - 1
-        {
-            image_speed = 0
-            room_restart()
-        }
-    }
-}
 </string>
           </argument>
         </arguments>
@@ -307,6 +326,7 @@ draw_set_font(hudfont)
 draw_set_colour(c_white)
 draw_text(703,18,global.maxbombs)
 draw_text(820,18,global.blastradius)
+draw_text(582,18,global.bomberlives)
 </string>
           </argument>
         </arguments>

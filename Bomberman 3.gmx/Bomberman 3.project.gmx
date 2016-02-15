@@ -84,10 +84,13 @@
     <sprite>sprites\spr_OpenDoor</sprite>
     <sprite>sprites\spr_Bomb</sprite>
     <sprite>sprites\spr_HUD</sprite>
+    <sprite>sprites\spr_Start</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\spr_stage_tileset</background>
     <background>background\bg_stage_tileset_flipped</background>
+    <background>background\bg_TitleScreen</background>
+    <background>background\bg_Stage1Start</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -136,8 +139,13 @@
     <object>objects\obj_Chest_withPanel</object>
     <object>objects\obj_HiddenPanel</object>
     <object>objects\obj_OpenDoor</object>
+    <object>objects\obj_Start</object>
+    <object>objects\obj_Stage1Start</object>
+    <object>objects\obj_Supervisor</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\TitleScreen</room>
+    <room>rooms\Stage_1_Start</room>
     <room>rooms\stage_1</room>
     <room>rooms\stage_2</room>
   </rooms>
