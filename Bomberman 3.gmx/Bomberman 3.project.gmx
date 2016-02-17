@@ -126,7 +126,6 @@
     <objects name="Enemies">
       <object>objects\enemy</object>
       <object>objects\obj_Frogman</object>
-      <object>objects\lazyEnemy</object>
     </objects>
     <objects name="Characters">
       <object>objects\bomberman</object>

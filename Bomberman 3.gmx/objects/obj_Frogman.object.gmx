@@ -30,6 +30,8 @@ movespeed = 2.5
 dir = -1
 xsp = 0
 ysp = 0
+vertMovement = true
+patrolTimer = random_range(30,90)
 </string>
           </argument>
         </arguments>
@@ -78,34 +80,43 @@ ysp = 0
             <string>if alive
 {
 //Vertical Movement
-
-    ysp = dir * movespeed;
-    if place_meeting(x,y+ysp,obj_Wall)
+    if vertMovement &amp;&amp; patrolTimer &gt; 0
     {
-        while (!place_meeting(x,y+sign(ysp),obj_Wall)) {y += sign(ysp)}
-        
-        ysp = 0;
+        ysp = dir * movespeed;
+        if place_meeting(x,y+ysp,obj_Wall)
+        {
+            while (!place_meeting(x,y+sign(ysp),obj_Wall)) {y += sign(ysp)}
+            
+            ysp = 0;
+        }
+       
+        if place_meeting(x,y+ysp,bomb)
+        {
+            while (!place_meeting(x, y+sign(ysp), bomb)) {y += sign(ysp)}
+            
+            ysp = 0;
+        }
+    
+        y += ysp;
+        patrolTimer -= 1
     }
-   
-    if place_meeting(x,y+ysp,bomb)
+//Horizontal Movement
+    if !vertMovement &amp;&amp; patrolTimer &gt; 0
     {
-        while (!place_meeting(x, y+sign(ysp), bomb)) {y += sign(ysp)}
-        
-        ysp = 0;
+        xsp = dir * movespeed;
+        if place_meeting(x+xsp,y,obj_Wall)
+        {
+            while (!place_meeting(x+sign(xsp),y,obj_Wall)) {x += sign(xsp)}
+            xsp = 0;
+        } 
+        if place_meeting(x+xsp,y,bomb)
+        {
+            while (!place_meeting(x+sign(xsp),y,bomb)) {x += sign(xsp)}
+            xsp = 0;
+        }
+        x += xsp
+        patrolTimer -= 1
     }
-
-    y += ysp;
-
-//Walking Animation
-    if dir = 1
-    {
-        sprite_index = spr_Frogman_Down; image_speed = .25
-    }
-    if dir = -1
-    {
-        sprite_index = spr_Frogman_Up; image_speed = .25
-    }
-
 // Delayed turn
     if ysp = 0
     {
@@ -127,6 +138,95 @@ if !alive
                 instance_destroy()
             }
         }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Patrolling
+if alive
+{
+    if patrolTimer &lt; 0
+    {
+        pick = irandom_range(0,1)
+        switch(pick)
+        {
+            case 0:
+                vertMovement = true
+                break
+            case 1:
+                vertMovement = false
+        }
+        patrolTimer = random_range(30,90)
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if vertMovement
+{
+    if dir = 1
+    {
+        draw_sprite(spr_Frogman_Down, image_index, x, y)
+        image_speed = .25
+    }
+    if dir = -1
+    {
+        draw_sprite(spr_Frogman_Up, image_index, x, y)
+        image_speed = .25
+    }
+}
+if !vertMovement
+{
+    if dir = 1
+    {
+        image_xscale = dir * -1
+        draw_sprite_ext(spr_Frogman_Left, image_index, x, y, image_xscale, image_yscale,
+                        image_angle, image_blend, image_alpha)
+        image_speed = .25
+    }
+    if dir = -1
+    {
+        image_xscale = dir * -1
+        draw_sprite_ext(spr_Frogman_Left, image_index, x, y, image_xscale, image_yscale,
+                        image_angle, image_blend, image_alpha)
+        image_speed = .25
     }
 }
 </string>
