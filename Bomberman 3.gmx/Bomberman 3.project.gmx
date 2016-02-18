@@ -114,6 +114,7 @@
       <object>objects\obj_explosion_v</object>
     </objects>
     <objects name="Power-Ups">
+      <object>objects\obj_PowerUp</object>
       <object>objects\obj_SpeedUp</object>
       <object>objects\obj_MaxBombsUp</object>
       <object>objects\obj_BlastRadiusUp</object>

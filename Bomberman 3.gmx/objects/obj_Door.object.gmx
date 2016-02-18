@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.panels = 3 and global.deadEnemy = 3
+            <string>if global.panels = 3 and global.deadEnemy = 2
 {
     image_speed = .2
     if image_index = 2
