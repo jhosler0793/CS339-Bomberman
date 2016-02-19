@@ -31,7 +31,9 @@ dir = -1
 xsp = 0
 ysp = 0
 vertMovement = true
-patrolTimer = random_range(50,120)
+patrolTimer = random_range(15,60)
+
+
 </string>
           </argument>
         </arguments>
@@ -118,28 +120,16 @@ patrolTimer = random_range(50,120)
         patrolTimer -= 1
     }
 // Delayed turn
-    if ysp = 0
+    if vertMovement and ysp = 0 
     {
         if !alarm[0] {alarm[0]=15}
-    }    
-}
-//Death Animation
-if !alive 
-{
-    sprite_index = spr_Frogman_Dead; image_speed = .15
-
-    if sprite_index = spr_Frogman_Dead
+    }
+    if !vertMovement and xsp = 0
     {
-        if image_speed &gt; 0
-        {
-            if image_index &gt; image_number - 1
-            {
-                global.deadEnemy+=1
-                instance_destroy()
-            }
-        }
+        if !alarm[0] {alarm[0]=15}
     }
 }
+
 </string>
           </argument>
         </arguments>
@@ -183,8 +173,34 @@ if alive
                     break
                 }
         }
-        patrolTimer = random_range(50,120)
+        patrolTimer = random_range(15,60)
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="explosion">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if alive
+{
+    alive = false
 }
 </string>
           </argument>
@@ -208,19 +224,23 @@ if alive
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if vertMovement
+            <string>if alive
+{
+//Vertical Animation
+if vertMovement
 {
     if dir = 1
     {
-        draw_sprite(spr_Frogman_Down, image_index, x, y)
+        draw_sprite(spr_Frogman_Down,-1,x,y)
         image_speed = .25
     }
     if dir = -1
     {
-        draw_sprite(spr_Frogman_Up, image_index, x, y)
+        draw_sprite(spr_Frogman_Up,-1,x,y)
         image_speed = .25
     }
 }
+//Horizontal Animation
 if !vertMovement
 {
     if dir = 1
@@ -238,6 +258,23 @@ if !vertMovement
         image_speed = .25
     }
 }
+}
+//Death Animation
+if !alive 
+{
+    draw_sprite(spr_Frogman_Dead,0,x,y)
+    image_speed = .15
+    
+    if image_speed &gt; 0
+    {
+        if image_index &gt; image_number - 1
+        {
+            global.deadEnemy+=1
+            instance_destroy()
+        }   
+    }    
+}
+
 </string>
           </argument>
         </arguments>
