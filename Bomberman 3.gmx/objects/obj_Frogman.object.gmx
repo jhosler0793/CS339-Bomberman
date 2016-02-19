@@ -169,10 +169,19 @@ if alive
         switch(pick)
         {
             case 0:
-                vertMovement = true
-                break
+                if !collision_rectangle(x + 32, y + 64, x - 32, y, obj_Wall, false, true) &amp;&amp;
+                   !collision_rectangle(x + 32, y - 64, x - 32, y, obj_Wall, false, true)
+                {
+                    vertMovement = true
+                    break
+                }
             case 1:
-                vertMovement = false
+                if !collision_rectangle(x + 64, y + 32, x, y - 32, obj_Wall, false, true) &amp;&amp;
+                   !collision_rectangle(x - 64, y + 32, x, y - 32, obj_Wall, false, true)
+                {
+                    vertMovement = false
+                    break
+                }
         }
         patrolTimer = random_range(50,120)
     }
