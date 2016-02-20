@@ -31,6 +31,7 @@ global.blastradius = 1;
 global.bomberlives = 3;
 global.maxbombup = false;
 global.blastradiusup = false;
+global.char = 0;
 </string>
           </argument>
         </arguments>

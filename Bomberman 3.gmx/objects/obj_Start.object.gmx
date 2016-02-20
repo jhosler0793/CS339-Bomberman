@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Stage_1_Start)
+            <string>room_goto(Controls)
 </string>
           </argument>
         </arguments>

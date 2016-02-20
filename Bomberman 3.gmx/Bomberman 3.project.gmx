@@ -10,53 +10,50 @@
       <sprite>sprites\spr_Bomberman_Down</sprite>
       <sprite>sprites\spr_Bomberman_Up</sprite>
       <sprite>sprites\spr_Bomberman_Left</sprite>
-      <sprite>sprites\spr_Bomberman_LayBombDown</sprite>
-      <sprite>sprites\spr_Bomberman_LayBombUp</sprite>
-      <sprite>sprites\spr_Bomberman_LayBombLeft</sprite>
       <sprite>sprites\spr_Bomberman_Hit</sprite>
       <sprite>sprites\spr_Bomberman_EnemyHit</sprite>
+      <sprite>sprites\spr_Bomberman_Select</sprite>
     </sprites>
     <sprites name="MexicanBomber">
       <sprite>sprites\spr_MexicanBomber_Down</sprite>
       <sprite>sprites\spr_MexicanBomber_Up</sprite>
       <sprite>sprites\spr_MexicanBomber_Left</sprite>
-      <sprite>sprites\spr_MexicanBomber_LayBombDown</sprite>
-      <sprite>sprites\spr_MexicanBomber_LayBombUp</sprite>
-      <sprite>sprites\spr_MexicanBomber_LayBombLeft</sprite>
       <sprite>sprites\spr_MexicanBomber_Hit</sprite>
+      <sprite>sprites\spr_MexicanBomber_EnemyHit</sprite>
+      <sprite>sprites\spr_MexicanBomber_Select</sprite>
     </sprites>
     <sprites name="BomberKid">
       <sprite>sprites\spr_BomberKid_Down</sprite>
       <sprite>sprites\spr_BomberKid_Up</sprite>
       <sprite>sprites\spr_BomberKid_Left</sprite>
-      <sprite>sprites\spr_BomberKid_LayBombDown</sprite>
-      <sprite>sprites\spr_BomberKid_LayBombUp</sprite>
-      <sprite>sprites\spr_BomberKid_LayBombLeft</sprite>
       <sprite>sprites\spr_BomberKid_Hit</sprite>
+      <sprite>sprites\spr_BomberKid_EnemyHit</sprite>
+      <sprite>sprites\spr_BomberKid_Select</sprite>
     </sprites>
     <sprites name="PrettyBomber">
       <sprite>sprites\spr_PrettyBomber_Down</sprite>
       <sprite>sprites\spr_PrettyBomber_Up</sprite>
       <sprite>sprites\spr_PrettyBomber_Left</sprite>
-      <sprite>sprites\spr_PrettyBomber_LayBombDown</sprite>
-      <sprite>sprites\spr_PrettyBomber_LayBombUp</sprite>
-      <sprite>sprites\spr_PrettyBomber_LayBombLeft</sprite>
       <sprite>sprites\spr_PrettyBomber_Hit</sprite>
+      <sprite>sprites\spr_PrettyBomber_EnemyHit</sprite>
+      <sprite>sprites\spr_PrettyBomber_Select</sprite>
     </sprites>
     <sprites name="PunkBomber">
-      <sprite>sprites\spr_PunkBomber_LayBombUp</sprite>
       <sprite>sprites\spr_PunkBomber_Down</sprite>
       <sprite>sprites\spr_PunkBomber_Up</sprite>
       <sprite>sprites\spr_PunkBomber_Left</sprite>
-      <sprite>sprites\spr_PunkBomber_LayBombDown</sprite>
-      <sprite>sprites\spr_PunkBomber_LayBombLeft</sprite>
       <sprite>sprites\spr_PunkBomber_Hit</sprite>
+      <sprite>sprites\spr_PunkBomber_EnemyHit</sprite>
+      <sprite>sprites\spr_PunkBomber_Select</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_Frogman_Down</sprite>
       <sprite>sprites\spr_Frogman_Left</sprite>
       <sprite>sprites\spr_Frogman_Up</sprite>
       <sprite>sprites\spr_Frogman_Dead</sprite>
+      <sprite>sprites\spr_MenuBirdy_Left</sprite>
+      <sprite>sprites\spr_MenuBirdy_Down</sprite>
+      <sprite>sprites\spr_MenuBirdy_Up</sprite>
     </sprites>
     <sprites name="Explosions">
       <sprite>sprites\spr_explosion</sprite>
@@ -85,12 +82,16 @@
     <sprite>sprites\spr_Bomb</sprite>
     <sprite>sprites\spr_HUD</sprite>
     <sprite>sprites\spr_Start</sprite>
+    <sprite>sprites\spr_Start2</sprite>
+    <sprite>sprites\spr_Select</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\spr_stage_tileset</background>
     <background>background\bg_stage_tileset_flipped</background>
     <background>background\bg_TitleScreen</background>
     <background>background\bg_Stage1Start</background>
+    <background>background\bg_CharSelect</background>
+    <background>background\bg_Controls</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -99,6 +100,7 @@
     <script>scripts\bomb_explode_2.gml</script>
     <script>scripts\pick_direction.gml</script>
     <script>scripts\powerupdrop.gml</script>
+    <script>scripts\charselection.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\hudfont</font>
@@ -127,9 +129,22 @@
     <objects name="Enemies">
       <object>objects\enemy</object>
       <object>objects\obj_Frogman</object>
+      <object>objects\obj_MenuBirdy</object>
     </objects>
     <objects name="Characters">
       <object>objects\bomberman</object>
+      <object>objects\bomberthekid</object>
+      <object>objects\punkbomber</object>
+      <object>objects\prettybomber</object>
+      <object>objects\mexicanbomber</object>
+    </objects>
+    <objects name="Char Select Screen">
+      <object>objects\obj_Bomberman_Select</object>
+      <object>objects\obj_MexicanBomber_Select</object>
+      <object>objects\obj_BomberKid_Select</object>
+      <object>objects\obj_PrettyBomber_Select</object>
+      <object>objects\obj_PunkBomber_Select</object>
+      <object>objects\obj_Select</object>
     </objects>
     <object>objects\bomb</object>
     <object>objects\obj_Door</object>
@@ -140,11 +155,14 @@
     <object>objects\obj_HiddenPanel</object>
     <object>objects\obj_OpenDoor</object>
     <object>objects\obj_Start</object>
+    <object>objects\obj_Start2</object>
     <object>objects\obj_Stage1Start</object>
     <object>objects\obj_Supervisor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
+    <room>rooms\Controls</room>
+    <room>rooms\CharSelect</room>
     <room>rooms\Stage_1_Start</room>
     <room>rooms\stage_1</room>
     <room>rooms\stage_2</room>
