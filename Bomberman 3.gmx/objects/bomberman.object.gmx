@@ -245,7 +245,7 @@ with obj_1up {instance_destroy()}
           <argument>
             <kind>1</kind>
             <string>show_message("All right!")
-room_restart()
+room_goto_next()
 </string>
           </argument>
         </arguments>
