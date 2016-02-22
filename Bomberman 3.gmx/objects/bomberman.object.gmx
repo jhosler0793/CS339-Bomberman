@@ -36,8 +36,8 @@ global.panels = 0;
 global.deadEnemy = 0;
 placingbomb = false;
 global.speedup = false;
-
-
+global.addlife = false;
+global.slowdown = false;
 </string>
           </argument>
         </arguments>
@@ -167,6 +167,61 @@ if !alive
     }
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_slowdown">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Slow down power-up
+
+movespeed -= 1.5;
+with obj_slowdown {instance_destroy()}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_1up">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Adds extra life
+
+if global.bomberlives &lt; 3{
+    global.bomberlives += 1;
+}
+
+with obj_1up {instance_destroy()}
 </string>
           </argument>
         </arguments>

@@ -11,7 +11,15 @@ else maxbombdrop=obj_MaxBombsUp
 if global.blastradiusup {blastradiusdrop=noone}
 else blastradiusdrop=obj_BlastRadiusUp
 
-drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop, noone)
+if global.addlife {addlifedrop=noone}
+else addlifedrop=obj_1up
+
+if global.slowdown {slowdowndrop=noone}
+else slowdowndrop=obj_slowdown
+
+
+drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop, noone,
+                addlifedrop, noone, slowdowndrop, noone)
 
 if drop != noone
 {
