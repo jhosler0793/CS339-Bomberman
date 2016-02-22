@@ -159,14 +159,14 @@ if alive
         switch(pick)
         {
             case 0:
-                if !collision_rectangle(x + 32, y + 64, x - 32, y, obj_Wall, false, true) &amp;&amp;
+                if !collision_rectangle(x + 32, y + 64, x - 32, y, obj_Wall, false, true) ||
                    !collision_rectangle(x + 32, y - 64, x - 32, y, obj_Wall, false, true)
                 {
                     vertMovement = true
                     break
                 }
             case 1:
-                if !collision_rectangle(x + 64, y + 32, x, y - 32, obj_Wall, false, true) &amp;&amp;
+                if !collision_rectangle(x + 64, y + 32, x, y - 32, obj_Wall, false, true) ||
                    !collision_rectangle(x - 64, y + 32, x, y - 32, obj_Wall, false, true)
                 {
                     vertMovement = false
@@ -262,7 +262,7 @@ if !vertMovement
 //Death Animation
 if !alive 
 {
-    draw_sprite(spr_Frogman_Dead,0,x,y)
+    draw_sprite(spr_Frogman_Dead,image_index,x,y)
     image_speed = .15
     
     if image_speed &gt; 0
