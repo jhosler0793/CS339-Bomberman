@@ -29,6 +29,7 @@
 image_speed = .5;
 if image_index = 5
 {   image_speed = 0
+    audio_play_sound(chest_burning, 2, false)
     powerupdrop()
     instance_destroy()
 }

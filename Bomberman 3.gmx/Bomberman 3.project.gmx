@@ -7,6 +7,9 @@
   <sounds name="sound">
     <sound>sound\stage_music</sound>
     <sound>sound\starting_music</sound>
+    <sound>sound\bomb_explosion</sound>
+    <sound>sound\chest_burning</sound>
+    <sound>sound\bomb_placement_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Bomberman">
