@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\stage_music</sound>
+    <sound>sound\starting_music</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Bomberman">
       <sprite>sprites\spr_Bomberman_Down</sprite>
