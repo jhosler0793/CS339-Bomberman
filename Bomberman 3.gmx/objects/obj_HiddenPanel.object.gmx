@@ -52,6 +52,7 @@
             <string>if image_index = 0
 {
     image_index = 1;
+    audio_play_sound(panel_activated_sound, 2, false)
     global.panels += 1
 }
 

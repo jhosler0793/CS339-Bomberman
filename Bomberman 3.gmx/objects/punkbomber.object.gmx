@@ -242,7 +242,7 @@ image_speed = .25
           <argument>
             <kind>1</kind>
             <string>/// Slow down power-up
-
+audio_play_sound(slow_down_sound, 2, false)
 movespeed -= 1.5;
 with obj_slowdown {instance_destroy()}
 </string>
@@ -268,7 +268,7 @@ with obj_slowdown {instance_destroy()}
           <argument>
             <kind>1</kind>
             <string>///Adds extra life
-
+audio_play_sound(oneUp_sound, 2, false)
 if global.bomberlives &lt; 3{
     global.bomberlives += 1;
 }
@@ -297,7 +297,7 @@ with obj_1up {instance_destroy()}
           <argument>
             <kind>1</kind>
             <string>///Blast Radius UP
-
+audio_play_sound(blast_radiusUp_sound, 2, false)
 global.blastradius += 1;
 with obj_BlastRadiusUp {instance_destroy()}
 </string>
@@ -323,7 +323,7 @@ with obj_BlastRadiusUp {instance_destroy()}
           <argument>
             <kind>1</kind>
             <string>///Max Bombs UP
-
+audio_play_sound(max_bombsUp_sound, 2, false)
 global.maxbombs += 1
 global.bombsAvailable += 1
 with obj_MaxBombsUp {instance_destroy()}
@@ -350,7 +350,7 @@ with obj_MaxBombsUp {instance_destroy()}
           <argument>
             <kind>1</kind>
             <string>///Speed UP
-
+audio_play_sound(speed_up_sound, 2, false)
 movespeed += 1.5
 with obj_SpeedUp {instance_destroy()}
 </string>

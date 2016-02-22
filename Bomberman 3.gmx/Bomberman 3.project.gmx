@@ -10,6 +10,13 @@
     <sound>sound\bomb_explosion</sound>
     <sound>sound\chest_burning</sound>
     <sound>sound\bomb_placement_sound</sound>
+    <sound>sound\panel_activated_sound</sound>
+    <sound>sound\door_opened_sound</sound>
+    <sound>sound\speed_up_sound</sound>
+    <sound>sound\slow_down_sound</sound>
+    <sound>sound\max_bombsUp_sound</sound>
+    <sound>sound\blast_radiusUp_sound</sound>
+    <sound>sound\oneUp_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Bomberman">
