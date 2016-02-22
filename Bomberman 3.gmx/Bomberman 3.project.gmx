@@ -166,6 +166,7 @@
     <room>rooms\Stage_1_Start</room>
     <room>rooms\stage_1</room>
     <room>rooms\stage_2</room>
+    <room>rooms\stage_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
