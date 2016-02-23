@@ -32,7 +32,7 @@ xsp = 0
 ysp = 0
 vertMovement = true
 patrolTimer = random_range(15,30)
-spearTimer = random_range(180,240)
+spearTimer = random_range(120,180)
 throwspear = false
 spearlimit = 1
 
@@ -60,7 +60,7 @@ spearlimit = 1
           <argument>
             <kind>1</kind>
             <string>throwspear = false
-spearTimer = random_range(180,240)
+spearTimer = random_range(120,180)
 spearlimit += 1
 </string>
           </argument>
