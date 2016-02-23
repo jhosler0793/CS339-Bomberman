@@ -31,7 +31,7 @@ dir = -1
 xsp = 0
 ysp = 0
 vertMovement = true
-patrolTimer = random_range(15,60)
+patrolTimer = random_range(15,30)
 
 
 </string>
@@ -159,21 +159,21 @@ if alive
         switch(pick)
         {
             case 0:
-                if !collision_rectangle(x + 32, y + 64, x - 32, y, obj_Wall, false, true) ||
+                if !collision_rectangle(x + 32, y + 64, x - 32, y, obj_Wall, false, true) &amp;&amp;
                    !collision_rectangle(x + 32, y - 64, x - 32, y, obj_Wall, false, true)
                 {
                     vertMovement = true
                     break
                 }
             case 1:
-                if !collision_rectangle(x + 64, y + 32, x, y - 32, obj_Wall, false, true) ||
+                if !collision_rectangle(x + 64, y + 32, x, y - 32, obj_Wall, false, true) &amp;&amp;
                    !collision_rectangle(x - 64, y + 32, x, y - 32, obj_Wall, false, true)
                 {
                     vertMovement = false
                     break
                 }
         }
-        patrolTimer = random_range(15,60)
+        patrolTimer = random_range(15,30)
     }
 }
 </string>
@@ -200,6 +200,7 @@ if alive
             <kind>1</kind>
             <string>if alive
 {
+    image_index = 0
     alive = false
 }
 </string>
@@ -243,14 +244,6 @@ if vertMovement
 //Horizontal Animation
 if !vertMovement
 {
-    if dir = 1
-    {
-        image_xscale = dir * -1
-        draw_sprite_ext(spr_Frogman_Left, image_index, x, y, image_xscale, image_yscale,
-                        image_angle, image_blend, image_alpha)
-        image_speed = .25
-    }
-    if dir = -1
     {
         image_xscale = dir * -1
         draw_sprite_ext(spr_Frogman_Left, image_index, x, y, image_xscale, image_yscale,

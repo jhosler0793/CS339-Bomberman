@@ -8,8 +8,8 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
-  <showcolour>0</showcolour>
+  <colour>65408</colour>
+  <showcolour>-1</showcolour>
   <code>//stops select character music and plays the stage music
 
 audio_stop_sound(starting_music)

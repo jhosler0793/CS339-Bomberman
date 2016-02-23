@@ -67,6 +67,19 @@
       <sprite>sprites\spr_MenuBirdy_Left</sprite>
       <sprite>sprites\spr_MenuBirdy_Down</sprite>
       <sprite>sprites\spr_MenuBirdy_Up</sprite>
+      <sprite>sprites\spr_AngryTree_Down</sprite>
+      <sprite>sprites\spr_AngryTree_Up</sprite>
+      <sprite>sprites\spr_AngryTree_Left</sprite>
+      <sprite>sprites\spr_AngryTree_Dead</sprite>
+      <sprite>sprites\spr_Goblin_Down</sprite>
+      <sprite>sprites\spr_Goblin_Up</sprite>
+      <sprite>sprites\spr_Goblin_Left</sprite>
+      <sprite>sprites\spr_Goblin_Dead</sprite>
+      <sprite>sprites\spr_Goblin_SpearThrow_Down</sprite>
+      <sprite>sprites\spr_Goblin_SpearThrow_Left</sprite>
+      <sprite>sprites\spr_Goblin_SpearThrow_Up</sprite>
+      <sprite>sprites\spr_Spear_Down</sprite>
+      <sprite>sprites\spr_Spear_Left</sprite>
     </sprites>
     <sprites name="Explosions">
       <sprite>sprites\spr_explosion</sprite>
@@ -146,6 +159,9 @@
       <object>objects\enemy</object>
       <object>objects\obj_Frogman</object>
       <object>objects\obj_MenuBirdy</object>
+      <object>objects\obj_AngryTree</object>
+      <object>objects\obj_Goblin</object>
+      <object>objects\obj_Spear</object>
     </objects>
     <objects name="Characters">
       <object>objects\bomberman</object>

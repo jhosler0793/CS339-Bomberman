@@ -34,10 +34,13 @@ vsp = 0;
 image_speed = 0;
 global.panels = 0;
 global.deadEnemy = 0;
-placingbomb = false;
 global.speedup = false;
 global.addlife = false;
 global.slowdown = false;
+if global.bombsAvailable &lt; global.maxbombs
+{
+    global.bombsAvailable = global.maxbombs
+}
 </string>
           </argument>
         </arguments>
@@ -81,7 +84,7 @@ if hmove=-1 {direction=180}
 if hmove=1 {direction=0}
 
 //Horizontal Movement and Wall Collision
-if (alive) and !placingbomb
+if (alive)
     {if place_meeting(x+xsp,y,obj_Wall)
         {
         while (!place_meeting(x+sign(xsp),y,obj_Wall)) { x += sign(xsp)}
@@ -91,7 +94,7 @@ if (alive) and !placingbomb
     }
         
 //Vertical Movement and Wall Collision
-if (alive) and !placingbomb
+if (alive)
     {if place_meeting(x,y+ysp,obj_Wall)
         {
         while (!place_meeting(x,y+sign(ysp),obj_Wall)) { y += sign(ysp)}
@@ -121,32 +124,6 @@ if (alive)
 //Self-Explosion
 if !alive 
 {
-    if sprite_index = spr_Bomberman_Hit
-    {
-        if image_speed &gt; 0
-        {
-            if image_index &gt; image_number - 1 
-            {
-                image_speed=0;
-                global.bomberlives -= 1;
-                if global.bomberlives &gt;= 0
-                {
-                    room_goto(Stage_1_Start)
-                }
-                else
-                {
-                    show_message("Woops.....GAME OVER!")
-                    game_restart()
-                }
-            }
-        }
-    }
-}
-//Enemy Hit Death
-if !alive 
-{
-    if sprite_index = spr_Bomberman_EnemyHit
-    {
         if image_speed &gt; 0
         {
             if image_index &gt; image_number - 1
@@ -164,8 +141,8 @@ if !alive
                 }
             }
         }
-    }
 }
+
 
 </string>
           </argument>
@@ -403,9 +380,11 @@ image_speed = .3;
             <string>draw_sprite(spr_HUD,0,0,0)
 draw_set_font(hudfont)
 draw_set_colour(c_white)
-draw_text(703,18,global.maxbombs)
-draw_text(820,18,global.blastradius)
-draw_text(582,18,global.bomberlives)
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_text(710,33,global.maxbombs)
+draw_text(825,33,global.blastradius)
+draw_text(590,33,global.bomberlives)
 </string>
           </argument>
         </arguments>
