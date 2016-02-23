@@ -32,9 +32,9 @@ xsp = 0
 ysp = 0
 vertMovement = true
 patrolTimer = random_range(15,30)
-spearTimer = random_range(120,180)
+spearTimer = random_range(180,240)
 throwspear = false
-
+spearlimit = 1
 
 
 </string>
@@ -60,7 +60,8 @@ throwspear = false
           <argument>
             <kind>1</kind>
             <string>throwspear = false
-spearTimer = random_range(120,180)
+spearTimer = random_range(180,240)
+spearlimit += 1
 </string>
           </argument>
         </arguments>
@@ -229,23 +230,27 @@ if alive
     if spearTimer &lt; 0
     {
         throwspear = true
-        if !instance_exists(obj_Spear)
+        
         {
-            if vertMovement and dir = 1
+            if vertMovement and dir = 1 and spearlimit = 1
             {
                 instance_create(x-10,y+20,obj_Spear)
+                spearlimit -= 1
             }
-            if vertMovement and dir = -1
+            if vertMovement and dir = -1 and spearlimit = 1
             {
                 instance_create(x+10,y-20,obj_Spear)
+                spearlimit -= 1
             }
-            if !vertMovement and dir = 1
+            if !vertMovement and dir = 1 and spearlimit = 1
             {
                 instance_create(x+20,y,obj_Spear)
+                spearlimit -= 1
             }
-            if !vertMovement and dir = -1
+            if !vertMovement and dir = -1 and spearlimit = 1
             {
                 instance_create(x-20,y,obj_Spear)
+                spearlimit -= 1
             }
         }
         if !alarm[1] {alarm[1] = 20}
