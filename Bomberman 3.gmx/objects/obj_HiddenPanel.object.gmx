@@ -52,7 +52,10 @@
             <string>if image_index = 0
 {
     image_index = 1;
-    audio_play_sound(panel_activated_sound, 2, false)
+    if !audio_is_playing(panel_activated_sound)
+    {
+        audio_play_sound(panel_activated_sound, 1, false)
+    }
     global.panels += 1
 }
 

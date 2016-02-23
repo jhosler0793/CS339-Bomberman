@@ -41,6 +41,13 @@ if global.bombsAvailable &lt; global.maxbombs
 {
     global.bombsAvailable = global.maxbombs
 }
+globalvar currentstage;
+global.currentstage[0] = Stage_1_Start;
+//global.currentstage[1] = Stage_2_Start;
+//global.currentstage[2] = Stage_3_Start;
+//global.currentstage[3] = Stage_4_Start;
+//global.currentstage[4] = Stage_5_Start;
+global.s = 0;
 </string>
           </argument>
         </arguments>
@@ -132,7 +139,7 @@ if !alive
                 global.bomberlives -= 1;
                 if global.bomberlives &gt;= 0
                 {
-                    room_goto(Stage_1_Start)
+                    room_goto(global.currentstage[global.s])
                 }
                 else
                 {
@@ -167,7 +174,7 @@ if !alive
           <argument>
             <kind>1</kind>
             <string>show_message("All right!")
-room_restart()
+room_goto_next()
 </string>
           </argument>
         </arguments>

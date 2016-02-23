@@ -128,6 +128,7 @@
     <script>scripts\pick_direction.gml</script>
     <script>scripts\powerupdrop.gml</script>
     <script>scripts\charselection.gml</script>
+    <script>scripts\charplace.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\hudfont</font>
@@ -165,10 +166,10 @@
     </objects>
     <objects name="Characters">
       <object>objects\bomberman</object>
-      <object>objects\bomberthekid</object>
-      <object>objects\punkbomber</object>
-      <object>objects\prettybomber</object>
       <object>objects\mexicanbomber</object>
+      <object>objects\bomberthekid</object>
+      <object>objects\prettybomber</object>
+      <object>objects\punkbomber</object>
     </objects>
     <objects name="Char Select Screen">
       <object>objects\obj_Bomberman_Select</object>
