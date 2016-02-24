@@ -117,6 +117,10 @@
     <background>background\bg_stage_tileset_flipped</background>
     <background>background\bg_TitleScreen</background>
     <background>background\bg_Stage1Start</background>
+    <background>background\bg_Stage2Start</background>
+    <background>background\bg_Stage3Start</background>
+    <background>background\bg_Stage4Start</background>
+    <background>background\bg_Stage5Start</background>
     <background>background\bg_CharSelect</background>
     <background>background\bg_Controls</background>
   </backgrounds>
@@ -189,7 +193,7 @@
     <object>objects\obj_OpenDoor</object>
     <object>objects\obj_Start</object>
     <object>objects\obj_Start2</object>
-    <object>objects\obj_Stage1Start</object>
+    <object>objects\obj_StageStart</object>
     <object>objects\obj_Supervisor</object>
   </objects>
   <rooms name="rooms">
@@ -198,8 +202,12 @@
     <room>rooms\CharSelect</room>
     <room>rooms\Stage_1_Start</room>
     <room>rooms\stage_1</room>
+    <room>rooms\Stage_2_Start</room>
     <room>rooms\stage_2</room>
+    <room>rooms\Stage_3_Start</room>
     <room>rooms\stage_3</room>
+    <room>rooms\Stage_4_Start</room>
+    <room>rooms\Stage_5_Start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

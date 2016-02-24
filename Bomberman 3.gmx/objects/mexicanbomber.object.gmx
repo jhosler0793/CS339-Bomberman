@@ -34,19 +34,16 @@ vsp = 0;
 image_speed = 0;
 global.panels = 0;
 global.deadEnemy = 0;
-global.speedup = false;
-global.addlife = false;
-global.slowdown = false;
 if global.bombsAvailable &lt; global.maxbombs
 {
     global.bombsAvailable = global.maxbombs
 }
 globalvar currentstage;
 global.currentstage[0] = Stage_1_Start;
-//global.currentstage[1] = Stage_2_Start;
-//global.currentstage[2] = Stage_3_Start;
-//global.currentstage[3] = Stage_4_Start;
-//global.currentstage[4] = Stage_5_Start;
+global.currentstage[1] = Stage_2_Start;
+global.currentstage[2] = Stage_3_Start;
+global.currentstage[3] = Stage_4_Start;
+global.currentstage[4] = Stage_5_Start;
 global.s = 0;
 </string>
           </argument>
