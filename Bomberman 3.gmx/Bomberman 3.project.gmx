@@ -207,7 +207,9 @@
     <room>rooms\Stage_3_Start</room>
     <room>rooms\stage_3</room>
     <room>rooms\Stage_4_Start</room>
+    <room>rooms\stage_4</room>
     <room>rooms\Stage_5_Start</room>
+    <room>rooms\stage_5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

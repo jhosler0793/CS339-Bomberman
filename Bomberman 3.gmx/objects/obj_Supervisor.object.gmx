@@ -65,6 +65,14 @@ if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("3")
 {
     room_goto(stage_3)
 }
+if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("4"))
+{
+    room_goto(stage_4)
+}
+if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("5"))
+{
+    room_goto(stage_5)
+}
 </string>
           </argument>
         </arguments>
