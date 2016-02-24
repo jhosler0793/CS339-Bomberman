@@ -41,7 +41,7 @@ maxX = 12
 maxY = 5
 
 //The starting position for the matrix
-startX = 96
+startX = 128
 startY = 320
 
 //The current position within the matrix
@@ -80,7 +80,7 @@ for (myY = 0; myY &lt; maxY; myY++) {
                 myMatrix[myX, myY] = "1"
             }
             
-            else if myObject == instance_nearest(myObject.x, myObject.y, obj_Wall) or instance_nearest(myObject.x, myObject.y, obj_Wall2) {
+            else if myObject == instance_nearest(myObject.x, myObject.y, obj_solidWall) {
                 myMatrix[myX, myY] = "2"
             }
             else if myObject == instance_nearest(myObject.x, myObject.y, obj_Chest) {
