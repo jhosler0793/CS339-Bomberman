@@ -1,6 +1,25 @@
 #define mapGenerator
 
 
+//Adds Bomberman to the stage
+for(i = 0; i < 1; i++) {
+    spaceFill = false
+    xcor = floor(random_range(0, maxX))
+    ycor = floor(random_range(0, maxY))
+    
+    while spaceFill == false {
+        if myMatrix[xcor, ycor] == "0" and manhattanDistance(xcor, ycor, bomberManX, bomberManY) > minDistance{
+            myMatrix[xcor, ycor] = "1"
+            spaceFill = true
+        }
+        else {
+            xcor = floor(random_range(0, maxX))
+            ycor = floor(random_range(0, maxY))
+         
+        }
+    }
+}
+
 //Finds the bomberMan instance within the matrix
 bomberManX = instanceFinderX("1")
 bomberManY = instanceFinderY("1")
@@ -74,6 +93,9 @@ instanceSpawner(myMatrix[], startX, startY, blockSize)
 for (myY = 0; myY < maxY; myY++) {
     cur = startY
     for (myX = 0; myX < maxX; myX++) {
+        if myMatrix[myX, myY] == "1" { 
+            charplace_pro_gen_stages(startX + (myX*blockSize), startY + (myY*blockSize))
+        }
         if myMatrix[myX, myY] == "4" {
             instance_create(startX + (myX*blockSize), startY + (myY*blockSize), obj_Chest)
         }

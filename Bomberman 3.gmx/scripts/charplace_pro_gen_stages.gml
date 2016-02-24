@@ -1,5 +1,8 @@
 //Puts the chosen character in the room
 
+placeX = argument[0]
+placeY = argument[1]
+
 if global.char = "Bomberman"
 {
     instance_create(placeX, placeY,bomberman)

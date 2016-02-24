@@ -75,6 +75,10 @@ if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("5")
 {
     room_goto(stage_5)
 }
+if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("6"))
+{
+    room_goto(stage_1_progen)
+}
 </string>
           </argument>
         </arguments>
