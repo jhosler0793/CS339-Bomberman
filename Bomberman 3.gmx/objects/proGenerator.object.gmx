@@ -38,11 +38,11 @@
 
 //The maximaze height and width of the matrix
 maxX = 12
-maxY = 6
+maxY = 5
 
 //The starting position for the matrix
 startX = 96
-startY = 288
+startY = 320
 
 //The current position within the matrix
 curX = startX
