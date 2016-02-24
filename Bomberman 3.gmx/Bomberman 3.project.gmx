@@ -208,6 +208,7 @@
     <room>rooms\Controls</room>
     <room>rooms\CharSelect</room>
     <room>rooms\Stage_1_Start</room>
+    <room>rooms\stage_1_progen</room>
     <room>rooms\stage_1</room>
     <room>rooms\Stage_2_Start</room>
     <room>rooms\stage_2</room>
@@ -217,7 +218,6 @@
     <room>rooms\stage_4</room>
     <room>rooms\Stage_5_Start</room>
     <room>rooms\stage_5</room>
-    <room>rooms\stage_1_progen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

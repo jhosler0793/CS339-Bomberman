@@ -8,7 +8,7 @@ for(i = 0; i < 1; i++) {
     ycor = floor(random_range(0, maxY))
     
     while spaceFill == false {
-        if myMatrix[xcor, ycor] == "0" and manhattanDistance(xcor, ycor, bomberManX, bomberManY) > minDistance{
+        if myMatrix[xcor, ycor] == "0" {
             myMatrix[xcor, ycor] = "1"
             spaceFill = true
         }
