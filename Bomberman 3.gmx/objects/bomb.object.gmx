@@ -78,6 +78,16 @@ if(explode)
         instance_destroy()
     }
 }
+{   if global.blastradius=3
+    {
+        bomb_explode_3()
+        instance_destroy()
+    }
+{   if global.blastradius=4
+    {
+        bomb_explode_4()
+        instance_destroy()
+    }
 </string>
           </argument>
         </arguments>
