@@ -96,6 +96,8 @@
       <sprite>sprites\spr_BlastRadiusUp</sprite>
       <sprite>sprites\spr_clog</sprite>
       <sprite>sprites\spr_1up</sprite>
+      <sprite>sprites\spr_TimeStop</sprite>
+      <sprite>sprites\spr_MinusLife</sprite>
     </sprites>
     <sprite>sprites\spr_Wall</sprite>
     <sprite>sprites\spr_StopFlameWall</sprite>
@@ -159,6 +161,8 @@
       <object>objects\obj_BlastRadiusUp</object>
       <object>objects\obj_1up</object>
       <object>objects\obj_slowdown</object>
+      <object>objects\obj_TimeStop</object>
+      <object>objects\obj_MinusLife</object>
     </objects>
     <objects name="Walls">
       <object>objects\obj_Wall</object>
