@@ -27,6 +27,13 @@
             <kind>1</kind>
             <string>//plays sound when door is opened
 audio_play_sound(door_opened_sound, 2, false)
+
+//Allows more bomb radius and Max bombs powerups to drop upon reaching Stage 3
+if global.s = 2
+{
+    global.maxbombup = false;
+    global.blastradiusup = false;
+}
 </string>
           </argument>
         </arguments>

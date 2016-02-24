@@ -60,6 +60,7 @@
             with obj_ClosedDoor instance_change(obj_OpenDoor,true)
         }
     }
+}
 if global.s = 1
 {
     if global.panels = 3 and global.deadEnemy = 5
@@ -95,7 +96,8 @@ if global.s = 3
                 with obj_ClosedDoor instance_change(obj_OpenDoor,true)
             }
         }
-}if global.s = 4
+}
+if global.s = 4
 {
     if global.panels = 3 and global.deadEnemy = 3
         {

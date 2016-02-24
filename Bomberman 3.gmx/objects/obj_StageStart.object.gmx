@@ -27,8 +27,6 @@
             <kind>1</kind>
             <string>countdown = 90;
 global.speedup = false;
-global.maxbombup = false;
-global.blastradiusup = false;
 global.addlife = false;
 global.slowdown = false;
 </string>
