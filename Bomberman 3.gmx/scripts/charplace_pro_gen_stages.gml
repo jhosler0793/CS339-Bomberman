@@ -2,7 +2,7 @@
 
 if global.char = "Bomberman"
 {
-    instance_create(192, 256,bomberman)
+    instance_create(placeX, placeY,bomberman)
 }
 if global.char = "MexicanBomber"
 {
@@ -10,14 +10,14 @@ if global.char = "MexicanBomber"
 }
 if global.char = "BomberKid"
 {
-    instance_create(192,256,bomberthekid)
+    instance_create(placeX,placeY,bomberthekid)
 }
 if global.char = "PrettyBomber"
 {
-    instance_create(192,256,prettybomber)
+    instance_create(placeX,placeY,prettybomber)
 }
 if global.char = "PunkBomber"
 {
-    instance_create(192, 256,punkbomber)
+    instance_create(placeX, placeY,punkbomber)
 }
 

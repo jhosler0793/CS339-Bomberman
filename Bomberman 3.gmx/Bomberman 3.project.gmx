@@ -137,6 +137,7 @@
     <script>scripts\charselection.gml</script>
     <script>scripts\charplace.gml</script>
     <script>scripts\mapGenerator.gml</script>
+    <script>scripts\charplace_pro_gen_stages.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\hudfont</font>
