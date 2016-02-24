@@ -27,22 +27,23 @@
             <kind>1</kind>
             <string>image_speed = 0;
 speed = 6;
-if obj_Goblin.vertMovement and obj_Goblin.dir = 1
+closeGob = instance_nearest(x,y,obj_Goblin)
+if closeGob.vertMovement and closeGob.dir = 1
 {
     direction = 270
 }
-if obj_Goblin.vertMovement and obj_Goblin.dir = -1
+if closeGob.vertMovement and closeGob.dir = -1
 {
     direction = 90
     image_yscale = -1
 }
-if obj_Goblin.vertMovement = false and obj_Goblin.dir = 1
+if closeGob.vertMovement = false and closeGob.dir = 1
 {
     direction = 0
     sprite_index = spr_Spear_Left
     image_xscale = -1
 }
-if obj_Goblin.vertMovement = false and obj_Goblin.dir = -1
+if closeGob.vertMovement = false and closeGob.dir = -1
 {
     direction = 180
     sprite_index = spr_Spear_Left
