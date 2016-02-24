@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>alive = true
-movespeed = 2.5
+movespeed = 3
 dir = -1
 xsp = 0
 ysp = 0
