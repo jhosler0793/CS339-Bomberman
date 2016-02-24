@@ -111,6 +111,7 @@
     <sprite>sprites\spr_Start</sprite>
     <sprite>sprites\spr_Start2</sprite>
     <sprite>sprites\spr_Select</sprite>
+    <sprite>sprites\spr_Fountain</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\spr_stage_tileset</background>
@@ -196,6 +197,7 @@
     <object>objects\obj_Start2</object>
     <object>objects\obj_StageStart</object>
     <object>objects\obj_Supervisor</object>
+    <object>objects\obj_Fountain</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
