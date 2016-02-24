@@ -112,6 +112,7 @@
     <sprite>sprites\spr_Start2</sprite>
     <sprite>sprites\spr_Select</sprite>
     <sprite>sprites\spr_Fountain</sprite>
+    <sprite>sprites\spr_solidWall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\spr_stage_tileset</background>
@@ -164,6 +165,7 @@
       <object>objects\obj_Wall</object>
       <object>objects\obj_Wall2</object>
       <object>objects\obj_StopFlameWall</object>
+      <object>objects\obj_solidWall</object>
     </objects>
     <objects name="Enemies">
       <object>objects\enemy</object>
