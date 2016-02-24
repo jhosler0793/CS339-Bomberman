@@ -134,6 +134,7 @@
     <script>scripts\powerupdrop.gml</script>
     <script>scripts\charselection.gml</script>
     <script>scripts\charplace.gml</script>
+    <script>scripts\mapGenerator.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\hudfont</font>
@@ -198,6 +199,8 @@
     <object>objects\obj_StageStart</object>
     <object>objects\obj_Supervisor</object>
     <object>objects\obj_Fountain</object>
+    <object>objects\pro_Gen_Objects</object>
+    <object>objects\proGenerator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
@@ -213,6 +216,7 @@
     <room>rooms\stage_4</room>
     <room>rooms\Stage_5_Start</room>
     <room>rooms\stage_5</room>
+    <room>rooms\stage_1_progen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
