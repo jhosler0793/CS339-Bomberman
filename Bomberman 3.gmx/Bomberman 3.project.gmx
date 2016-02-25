@@ -26,6 +26,7 @@
       <sprite>sprites\spr_Bomberman_Hit</sprite>
       <sprite>sprites\spr_Bomberman_EnemyHit</sprite>
       <sprite>sprites\spr_Bomberman_Select</sprite>
+      <sprite>sprites\spr_Bomberman_Win</sprite>
     </sprites>
     <sprites name="MexicanBomber">
       <sprite>sprites\spr_MexicanBomber_Down</sprite>
@@ -34,6 +35,7 @@
       <sprite>sprites\spr_MexicanBomber_Hit</sprite>
       <sprite>sprites\spr_MexicanBomber_EnemyHit</sprite>
       <sprite>sprites\spr_MexicanBomber_Select</sprite>
+      <sprite>sprites\spr_MexicanBomber_Win</sprite>
     </sprites>
     <sprites name="BomberKid">
       <sprite>sprites\spr_BomberKid_Down</sprite>
@@ -42,6 +44,7 @@
       <sprite>sprites\spr_BomberKid_Hit</sprite>
       <sprite>sprites\spr_BomberKid_EnemyHit</sprite>
       <sprite>sprites\spr_BomberKid_Select</sprite>
+      <sprite>sprites\spr_BomberKid_Win</sprite>
     </sprites>
     <sprites name="PrettyBomber">
       <sprite>sprites\spr_PrettyBomber_Down</sprite>
@@ -50,6 +53,7 @@
       <sprite>sprites\spr_PrettyBomber_Hit</sprite>
       <sprite>sprites\spr_PrettyBomber_EnemyHit</sprite>
       <sprite>sprites\spr_PrettyBomber_Select</sprite>
+      <sprite>sprites\spr_PrettyBomber_Win</sprite>
     </sprites>
     <sprites name="PunkBomber">
       <sprite>sprites\spr_PunkBomber_Down</sprite>
@@ -58,6 +62,7 @@
       <sprite>sprites\spr_PunkBomber_Hit</sprite>
       <sprite>sprites\spr_PunkBomber_EnemyHit</sprite>
       <sprite>sprites\spr_PunkBomber_Select</sprite>
+      <sprite>sprites\spr_PunkBomber_Win</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_Frogman_Down</sprite>
@@ -116,9 +121,11 @@
     <sprite>sprites\spr_HUD</sprite>
     <sprite>sprites\spr_Start</sprite>
     <sprite>sprites\spr_Start2</sprite>
+    <sprite>sprites\spr_GameOverStart</sprite>
     <sprite>sprites\spr_Select</sprite>
     <sprite>sprites\spr_Fountain</sprite>
     <sprite>sprites\spr_solidWall</sprite>
+    <sprite>sprites\spr_GameOverBomb</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\spr_stage_tileset</background>
@@ -131,6 +138,8 @@
     <background>background\bg_Stage5Start</background>
     <background>background\bg_CharSelect</background>
     <background>background\bg_Controls</background>
+    <background>background\bg_GameOver</background>
+    <background>background\bg_Victory</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -189,6 +198,13 @@
       <object>objects\punkbomber</object>
       <object>objects\character</object>
     </objects>
+    <objects name="Win Screen">
+      <object>objects\obj_BomberKid_Win</object>
+      <object>objects\obj_Bomberman_Win</object>
+      <object>objects\obj_MexicanBomber_Win</object>
+      <object>objects\obj_PrettyBomber_Win</object>
+      <object>objects\obj_PunkBomber_Win</object>
+    </objects>
     <objects name="Char Select Screen">
       <object>objects\obj_Bomberman_Select</object>
       <object>objects\obj_MexicanBomber_Select</object>
@@ -212,6 +228,8 @@
     <object>objects\obj_Fountain</object>
     <object>objects\pro_Gen_Objects</object>
     <object>objects\proGenerator</object>
+    <object>objects\obj_GameOverBomb</object>
+    <object>objects\obj_GameOverStart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
@@ -230,6 +248,8 @@
     <room>rooms\Stag_1_Start_ProGen</room>
     <room>rooms\stage_1_progen</room>
     <room>rooms\Stage_2_Start_ProGen</room>
+    <room>rooms\GameOver</room>
+    <room>rooms\Victory</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
