@@ -281,8 +281,9 @@ if !vertMovement
         image_speed = .15
     }
 }
-//picks up powerup animation
-if collision_rectangle(x+32,y+32,x-32,y-32,obj_PowerUp,false,true)
+//picks up powerup animation or grabs Bomberman
+if collision_rectangle(x+32,y+32,x-32,y-32,obj_PowerUp,false,true) 
+or collision_rectangle(x+32,y+32,x-32,y-32,character,false,true)
 {
     {
     draw_sprite_ext(spr_Hand_Showing, image_index, x, y, image_xscale, image_yscale,
