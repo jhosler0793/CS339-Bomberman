@@ -84,7 +84,9 @@
       <sprite>sprites\spr_Goblin_SpearThrow_Left</sprite>
       <sprite>sprites\spr_Goblin_SpearThrow_Up</sprite>
       <sprite>sprites\spr_Spear_Down</sprite>
+      <sprite>sprites\spr_Spear_Down_NoCollision</sprite>
       <sprite>sprites\spr_Spear_Left</sprite>
+      <sprite>sprites\spr_Spear_Left_NoCollision</sprite>
       <sprite>sprites\spr_Hand_Moving</sprite>
       <sprite>sprites\spr_Hand_Moving_EatsBombs</sprite>
       <sprite>sprites\spr_Hand_Showing</sprite>
@@ -230,6 +232,7 @@
     <object>objects\proGenerator</object>
     <object>objects\obj_GameOverBomb</object>
     <object>objects\obj_Restart</object>
+    <object>objects\obj_StageTimer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>

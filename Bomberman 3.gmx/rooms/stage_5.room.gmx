@@ -12,9 +12,7 @@
   <showcolour>-1</showcolour>
   <code>charplace()
 
-//Current Stage Increment
-if global.s != 4
-{global.s = 4}</code>
+global.s = 4</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -528,6 +526,7 @@ if global.s != 4
     <instance objName="obj_Goblin" x="640" y="896" name="inst_9A3B4C26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goblin" x="448" y="320" name="inst_3AF2886E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goblin" x="672" y="576" name="inst_D4C1FC42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_StageTimer" x="64" y="32" name="inst_7CD6E397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="spr_stage_tileset" x="64" y="128" w="64" h="64" xo="136" yo="0" id="10000613" name="inst_94508B9E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
