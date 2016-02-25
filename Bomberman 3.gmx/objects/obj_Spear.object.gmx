@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
+            <string>destroy = false;
+image_speed = 0;
 speed = 6;
 closeGob = instance_nearest(x,y,obj_Goblin)
 if closeGob.vertMovement and closeGob.dir = 1
@@ -71,17 +72,25 @@ if closeGob.vertMovement = false and closeGob.dir = -1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Removes collision detection when in destroy animation
-
-if image_index &gt; 0
+            <string>if destroy
 {
-    if sprite_index = spr_Spear_Down
+speed = 0;
+image_speed = .25
+
+if sprite_index = spr_Spear_Down
+{
+    sprite_index = spr_Spear_Down_Destroy
+}
+if sprite_index = spr_Spear_Left
+{
+    sprite_index = spr_Spear_Left_Destroy
+}
+if image_speed &gt; 0
     {
-        mask_index = spr_Spear_Down_NoCollision
-    }
-    if sprite_index = spr_Spear_Left
-    {
-        mask_index = spr_Spear_Left_NoCollision
+        if image_index &gt; image_number - 1
+        {
+            instance_destroy()
+        }
     }
 }
 </string>
@@ -106,15 +115,10 @@ if image_index &gt; 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 0;
-image_speed = .25
-if image_speed &gt; 0
-{
-    if image_index &gt; image_number - 1
-    {
-        instance_destroy()
-    }
-}
+            <string>destroy = true;
+
+
+
 </string>
           </argument>
         </arguments>

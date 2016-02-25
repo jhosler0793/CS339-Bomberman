@@ -102,13 +102,13 @@ secstring = string(seconds);
           <argument>
             <kind>1</kind>
             <string>//Decrements every second unless Stop Timer Power-up active
-//if global.stopTimer = false
-//{
+if global.stopTimer = false
+{
     if !alarm[0] or alarm[0]=0 
     {
         alarm[0]=room_speed
     }
-//}
+}
 
 //For showing correct timer in m:s
 if seconds &lt; 0
