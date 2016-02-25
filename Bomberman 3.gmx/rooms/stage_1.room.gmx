@@ -205,6 +205,7 @@
     <instance objName="obj_Frogman" x="320" y="448" name="inst_9CCF46F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goblin" x="576" y="512" name="inst_A44474C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AngryTree" x="448" y="352" name="inst_FEB87B0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hand_EatsBombs" x="128" y="384" name="inst_ED3EECE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="spr_stage_tileset" x="64" y="128" w="64" h="64" xo="136" yo="0" id="10000613" name="inst_94508B9E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -257,7 +258,6 @@
     <tile bgName="spr_stage_tileset" x="256" y="384" w="64" h="64" xo="68" yo="0" id="10000681" name="inst_FD15E328" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="192" y="384" w="64" h="64" xo="68" yo="0" id="10000682" name="inst_831B0DCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="128" y="384" w="64" h="64" xo="68" yo="0" id="10000683" name="inst_DB98EBA1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="spr_stage_tileset" x="64" y="384" w="64" h="64" xo="68" yo="0" id="10000684" name="inst_6A65BD6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="64" y="448" w="64" h="64" xo="68" yo="0" id="10000685" name="inst_E98C879D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="192" y="448" w="64" h="64" xo="68" yo="0" id="10000686" name="inst_B9665403" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="256" y="448" w="64" h="64" xo="68" yo="0" id="10000687" name="inst_C7DF2995" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -346,6 +346,7 @@
     <tile bgName="spr_stage_tileset" x="768" y="640" w="64" h="64" xo="476" yo="136" id="10000818" name="inst_79A37CC7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="640" y="640" w="64" h="64" xo="476" yo="136" id="10000819" name="inst_2960A6ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="128" y="512" w="64" h="64" xo="68" yo="0" id="10000849" name="inst_45955795" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="spr_stage_tileset" x="64" y="384" w="64" h="64" xo="68" yo="0" id="10001833" name="inst_0F3916AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="96" y="160" w="64" h="64" xo="0" yo="0" id="10000821" name="inst_824AD934" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="96" y="288" w="64" h="64" xo="0" yo="0" id="10000822" name="inst_1BB97105" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="96" y="416" w="64" h="64" xo="0" yo="0" id="10000823" name="inst_731FCC4E" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

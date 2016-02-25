@@ -80,6 +80,12 @@
       <sprite>sprites\spr_Goblin_SpearThrow_Up</sprite>
       <sprite>sprites\spr_Spear_Down</sprite>
       <sprite>sprites\spr_Spear_Left</sprite>
+      <sprite>sprites\spr_Hand_Moving</sprite>
+      <sprite>sprites\spr_Hand_Moving_EatsBombs</sprite>
+      <sprite>sprites\spr_Hand_Showing</sprite>
+      <sprite>sprites\spr_Hand_Showing_EatsBombs</sprite>
+      <sprite>sprites\spr_Hand_Dead</sprite>
+      <sprite>sprites\spr_Hand_Dead_EatsBombs</sprite>
     </sprites>
     <sprites name="Explosions">
       <sprite>sprites\spr_explosion</sprite>
@@ -168,6 +174,8 @@
     <objects name="Enemies">
       <object>objects\enemy</object>
       <object>objects\obj_Frogman</object>
+      <object>objects\obj_Hand</object>
+      <object>objects\obj_Hand_EatsBombs</object>
       <object>objects\obj_MenuBirdy</object>
       <object>objects\obj_AngryTree</object>
       <object>objects\obj_Goblin</object>
