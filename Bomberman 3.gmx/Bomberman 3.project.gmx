@@ -141,6 +141,7 @@
     <background>background\bg_Stage4Start</background>
     <background>background\bg_Stage5Start</background>
     <background>background\bg_CharSelect</background>
+    <background>background\bg_StageType_selection</background>
     <background>background\bg_Controls</background>
     <background>background\bg_GameOver</background>
     <background>background\bg_Victory</background>
@@ -239,11 +240,13 @@
     <object>objects\obj_GameOverBomb</object>
     <object>objects\obj_Restart</object>
     <object>objects\obj_StageTimer</object>
+    <object>objects\stageType_selector</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
     <room>rooms\Controls</room>
     <room>rooms\CharSelect</room>
+    <room>rooms\stageType_selection</room>
     <room>rooms\Stage_1_Start</room>
     <room>rooms\stage_1</room>
     <room>rooms\Stage_2_Start</room>
