@@ -75,7 +75,7 @@ if global.s = 1
 }
 if global.s = 2
 {
-    if global.panels = 5 and global.deadEnemy = 7
+    if global.panels = 3 and global.deadEnemy = 3
         {
             image_speed = .2
             if image_index = 2
@@ -87,7 +87,7 @@ if global.s = 2
 }
 if global.s = 3
 {
-    if global.panels = 5 and global.deadEnemy = 7
+    if global.panels = 3 and global.deadEnemy = 3
         {
             image_speed = .2
             if image_index = 2
