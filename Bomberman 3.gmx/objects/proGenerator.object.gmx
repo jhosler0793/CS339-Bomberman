@@ -37,7 +37,7 @@
 */
 
 //The maximaze height and width of the matrix
-maxX = 12
+maxX = 11
 maxY = 5
 
 //The starting position for the matrix
@@ -58,9 +58,21 @@ myMatrix[] = 0
 myObject = noone
 
 //Control variables for the amount of objects to be spawned in
-numOfWalls = 15
-minDistance = 1
-maxEnemy = 3
+if room == stage_1_progen {
+
+    numOfChest = 17
+    numOfPanelChest = 3
+    numOfWalls = 20
+    
+    maxEnemy = 3
+    numOfAngryTree = 1
+    numOfFrogMan = 2
+    numOfMenuBirdy = 0
+    numOfGoblin = 0
+    
+    minDistance  = 1
+
+}
 
 /*
     Searches the map area in the blocksize entered for instacnes of objects already on the map.
@@ -83,7 +95,7 @@ for (myY = 0; myY &lt; maxY; myY++) {
             else if myObject == instance_nearest(myObject.x, myObject.y, obj_solidWall) {
                 myMatrix[myX, myY] = "2"
             }
-            else if myObject == instance_nearest(myObject.x, myObject.y, obj_Chest) {
+            else if myObject == instance_nearest(myObject.x, myObject.y, obj_Chest_withPanel) {
                 myMatrix[myX, myY] = "3"
             }
             else if myObject == instance_nearest(myObject.x, myObject.y, obj_Chest) {

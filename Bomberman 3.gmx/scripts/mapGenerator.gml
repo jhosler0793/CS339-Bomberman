@@ -24,7 +24,7 @@ for(i = 0; i < 1; i++) {
 bomberManX = instanceFinderX("1")
 bomberManY = instanceFinderY("1")
 
-//Adds Frogman to the matrix
+//Adds Enemies to the matrix
 
 for(i = 0; i < maxEnemy; i++) {
     spaceFill = false
@@ -33,14 +33,49 @@ for(i = 0; i < maxEnemy; i++) {
     
     while spaceFill == false {
         if myMatrix[xcor, ycor] == "0" and manhattanDistance(xcor, ycor, bomberManX, bomberManY) > minDistance{
-            if i >= 1 and comDistance("5", xcor, ycor, 3) {
+            if numOfFrogMan > 0 and i >= 1 and comDistance("5", xcor, ycor, 3) and comDistance("6", xcor, ycor, 3) and comDistance("7", xcor, ycor, 3) and comDistance("8", xcor, ycor, 3) {
                 myMatrix[xcor, ycor] = "5"
                 spaceFill = true
+                numOfFrogMan--
+            }
+            else if numOfAngryTree > 0 and i >= 1 and comDistance("5", xcor, ycor, 3) and comDistance("6", xcor, ycor, 3) and comDistance("7", xcor, ycor, 3) and comDistance("8", xcor, ycor, 3) {
+                myMatrix[xcor, ycor] = "7"
+                spaceFill = true
+                numOfAngryTree--
+            }
+            else if numOfMenuBirdy > 0 and i >= 1 and comDistance("5", xcor, ycor, 3) and comDistance("6", xcor, ycor, 3) and comDistance("7", xcor, ycor, 3) and comDistance("8", xcor, ycor, 3) {
+                myMatrix[xcor, ycor] = "6"
+                spaceFill = true
+                numOfMenuBirdy--
+            }
+            else if numOfGoblin > 0 and i >= 1 and comDistance("5", xcor, ycor, 3) and comDistance("6", xcor, ycor, 3) and comDistance("7", xcor, ycor, 3) and comDistance("8", xcor, ycor, 3) {
+                myMatrix[xcor, ycor] = "8"
+                spaceFill = true
+                numOfGoblin--
             }
             else {
-                if i < 1 { 
-                    myMatrix[xcor, ycor] = "5"
-                    spaceFill = true
+                if i < 1 {
+                    if  numOfFrogMan > 0 {
+                        myMatrix[xcor, ycor] = "5"
+                        spaceFill = true
+                        numOfFrogMan--
+                    }
+                    else if  numOfAngryTree > 0 {
+                        myMatrix[xcor, ycor] = "7"
+                        spaceFill = true
+                        numOfAngryTree--
+                    }
+                    else if  numOfMenuBirdy > 0 {
+                        myMatrix[xcor, ycor] = "6"
+                        spaceFill = true
+                        numOfMenuBirdy--
+                    }
+                    else if  numOfGoblin > 0 {
+                        myMatrix[xcor, ycor] = "8"
+                        spaceFill = true
+                        numOfGoblin--
+                    }
+                    
                 }
                 else {
                     randomize()
@@ -69,8 +104,16 @@ for(i = 0; i < numOfWalls; i++) {
     
     while spaceFill == false {
         if myMatrix[xcor, ycor] == "0" and manhattanDistance(xcor, ycor, bomberManX, bomberManY) > minDistance{
-            myMatrix[xcor, ycor] = "4"
-            spaceFill = true
+            if numOfChest > 0 {
+                myMatrix[xcor, ycor] = "4"
+                spaceFill = true
+                numOfChest--
+            }
+            else if numOfPanelChest > 0 {
+                myMatrix[xcor, ycor] = "3"
+                spaceFill = true
+                numOfPanelChest--
+            }
         }
         else {
             xcor = floor(random_range(0, maxX))
@@ -96,11 +139,23 @@ for (myY = 0; myY < maxY; myY++) {
         if myMatrix[myX, myY] == "1" { 
             charplace_pro_gen_stages(startX + (myX*blockSize), startY + (myY*blockSize))
         }
-        if myMatrix[myX, myY] == "4" {
+        else if myMatrix[myX, myY] == "3" {
+            instance_create(startX + (myX*blockSize), startY + (myY*blockSize), obj_Chest_withPanel)
+        }
+        else if myMatrix[myX, myY] == "4" {
             instance_create(startX + (myX*blockSize), startY + (myY*blockSize), obj_Chest)
         }
-        if myMatrix[myX, myY] == "5" {
+        else if myMatrix[myX, myY] == "5" {
             instance_create(startX + (myX*blockSize), startY + (myY*blockSize), obj_Frogman)
+        }
+        else if myMatrix[myX, myY] == "6" {
+            instance_create(startX + (myX*blockSize), startY + (myY*blockSize), obj_MenuBirdy)
+        }
+        else if myMatrix[myX, myY] == "7" {
+            instance_create(startX + (myX*blockSize), startY + (myY*blockSize), obj_AngryTree)
+        }
+        else if myMatrix[myX, myY] == "8" {
+            instance_create(startX + (myX*blockSize), startY + (myY*blockSize), obj_Goblin)
         }
     }
 }
