@@ -16,7 +16,10 @@ audio_stop_sound(starting_music)
 if !audio_is_playing(stage_music)
 {
     audio_play_sound(stage_music, 1, true)
-}</code>
+}
+
+//Current Stage
+global.s = 3</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
