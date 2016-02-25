@@ -29,6 +29,8 @@
 global.speedup = false;
 global.addlife = false;
 global.slowdown = false;
+global.timestop = false;
+global.minuslife = false;
 </string>
           </argument>
         </arguments>

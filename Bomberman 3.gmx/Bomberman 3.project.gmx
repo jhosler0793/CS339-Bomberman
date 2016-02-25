@@ -84,9 +84,9 @@
       <sprite>sprites\spr_Goblin_SpearThrow_Left</sprite>
       <sprite>sprites\spr_Goblin_SpearThrow_Up</sprite>
       <sprite>sprites\spr_Spear_Down</sprite>
-      <sprite>sprites\spr_Spear_Down_NoCollision</sprite>
+      <sprite>sprites\spr_Spear_Down_Destroy</sprite>
       <sprite>sprites\spr_Spear_Left</sprite>
-      <sprite>sprites\spr_Spear_Left_NoCollision</sprite>
+      <sprite>sprites\spr_Spear_Left_Destroy</sprite>
       <sprite>sprites\spr_Hand_Moving</sprite>
       <sprite>sprites\spr_Hand_Moving_EatsBombs</sprite>
       <sprite>sprites\spr_Hand_Showing</sprite>
@@ -109,6 +109,8 @@
       <sprite>sprites\spr_BlastRadiusUp</sprite>
       <sprite>sprites\spr_clog</sprite>
       <sprite>sprites\spr_1up</sprite>
+      <sprite>sprites\spr_MinusLife</sprite>
+      <sprite>sprites\spr_TimeStop</sprite>
     </sprites>
     <sprite>sprites\spr_Wall</sprite>
     <sprite>sprites\spr_StopFlameWall</sprite>
@@ -175,6 +177,8 @@
       <object>objects\obj_BlastRadiusUp</object>
       <object>objects\obj_1up</object>
       <object>objects\obj_slowdown</object>
+      <object>objects\obj_MinusLife</object>
+      <object>objects\obj_TimeStop</object>
     </objects>
     <objects name="Walls">
       <object>objects\obj_Wall</object>
