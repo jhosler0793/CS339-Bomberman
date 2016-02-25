@@ -12,7 +12,9 @@
   <showcolour>-1</showcolour>
   <code>charplace()
 
-global.s = 1</code>
+//Current Stage Increment
+if global.s != 1
+{global.s = 1}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -31,7 +31,15 @@
 }
 if global.blastradius = 2
 {
-    countdown = 70
+    countdown = 75
+}
+if global.blastradius = 3
+{
+    countdown = 90
+}
+if global.blastradius = 4
+{
+    countdown = 105
 }
 
 explode = false
@@ -75,6 +83,16 @@ if(explode)
     if global.blastradius=2
     {
         bomb_explode_2()
+        instance_destroy()
+    }
+    if global.blastradius=3
+    {
+        bomb_explode_3()
+        instance_destroy()
+    }
+    if global.blastradius=4
+    {
+        bomb_explode_4()
         instance_destroy()
     }
 }

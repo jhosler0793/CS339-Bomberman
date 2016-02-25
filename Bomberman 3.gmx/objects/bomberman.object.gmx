@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Player input
+            <string>event_inherited()
+
+// Player input
 key_right = keyboard_check(vk_right);
 key_d = keyboard_check(ord("D"));
 key_left = -keyboard_check(vk_left);

@@ -150,6 +150,8 @@
     <script>scripts\placeBomb.gml</script>
     <script>scripts\bomb_explode.gml</script>
     <script>scripts\bomb_explode_2.gml</script>
+    <script>scripts\bomb_explode_3.gml</script>
+    <script>scripts\bomb_explode_4.gml</script>
     <script>scripts\pick_direction.gml</script>
     <script>scripts\powerupdrop.gml</script>
     <script>scripts\charselection.gml</script>

@@ -26,13 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>global.timesup = false;
+global.stopTimer = false;
 
 // Sets timer based on current stage
 
 if global.s = 0
 {
 minutes = 1;
-seconds = 59;
+seconds = 30;
 }
 if global.s = 1
 {
@@ -47,11 +48,11 @@ seconds = 30;
 if global.s = 3
 {
 minutes = 2;
-seconds = 45;
+seconds = 59;
 }
 if global.s = 4
 {
-minutes = 2;
+minutes = 3;
 seconds = 59;
 }
 
@@ -78,7 +79,10 @@ secstring = string(seconds);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds -= 1
+            <string>if global.stopTimer = false
+{
+    seconds -= 1
+}
 </string>
           </argument>
         </arguments>
@@ -101,20 +105,35 @@ secstring = string(seconds);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Decrements every second unless Stop Timer Power-up active
-if global.stopTimer = false
-{
-    if !alarm[0] or alarm[0]=0 
+            <string>//Time's up!
+if minutes = 0 and seconds = 0
     {
-        alarm[0]=room_speed
+        global.stopTimer = true
+        global.timesup = true        
     }
+
+
+//Decrements every second unless Stop Timer Power-up active
+if !alarm[0] or alarm[0]=0 
+{
+    alarm[0]=room_speed
 }
 
 //For showing correct timer in m:s
-if seconds &lt; 0
+if minutes &gt; 0
 {
-    seconds = 59
-    minutes -= 1
+    if seconds &lt; 0
+    {
+        seconds = 59
+        minutes -= 1
+    }
+}
+if minutes = 0
+{
+    if seconds &lt; 0
+    {
+    seconds = 0
+    }
 }
 
 //Puts a leading 0 for single-digit seconds in timer
@@ -127,14 +146,7 @@ else
 secstring = string(seconds)
 }
 
-//Time's up!
-if minutes &lt; 0
-{   
-    if seconds &lt; 0
-    {
-        global.timesup = true
-    }
-}
+
 </string>
           </argument>
         </arguments>

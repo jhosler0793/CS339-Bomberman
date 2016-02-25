@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>destroy = false;
 image_speed = 0;
-speed = 6;
+speed = 5;
 closeGob = instance_nearest(x,y,obj_Goblin)
 if closeGob.vertMovement and closeGob.dir = 1
 {

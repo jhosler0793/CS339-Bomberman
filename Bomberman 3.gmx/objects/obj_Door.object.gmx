@@ -51,7 +51,7 @@
             <kind>1</kind>
             <string>if global.s = 0
 {
-    if global.panels = 3 and global.deadEnemy = 3
+    if global.panels &gt;= 3 and global.deadEnemy &gt;= 3
     {
         image_speed = .2
         if image_index = 2
@@ -63,7 +63,7 @@
 }
 if global.s = 1
 {
-    if global.panels = 3 and global.deadEnemy = 5
+    if global.panels &gt;= 3 and global.deadEnemy &gt;= 5
         {
             image_speed = .2
             if image_index = 2
@@ -75,7 +75,7 @@ if global.s = 1
 }
 if global.s = 2
 {
-    if global.panels = 3 and global.deadEnemy = 3
+    if global.panels &gt;= 5 and global.deadEnemy &gt;= 7
         {
             image_speed = .2
             if image_index = 2
@@ -87,7 +87,7 @@ if global.s = 2
 }
 if global.s = 3
 {
-    if global.panels = 3 and global.deadEnemy = 3
+    if global.panels &gt;= 6 and global.deadEnemy &gt;= 9
         {
             image_speed = .2
             if image_index = 2
@@ -99,7 +99,7 @@ if global.s = 3
 }
 if global.s = 4
 {
-    if global.panels = 3 and global.deadEnemy = 3
+    if global.panels &gt;= 7 and global.deadEnemy &gt;= 11
         {
             image_speed = .2
             if image_index = 2

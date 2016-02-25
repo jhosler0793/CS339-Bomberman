@@ -75,6 +75,75 @@ global.s = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.timesup = true
+{
+    global.bomberlives -= 1
+    
+    if global.bomberlives &gt; 0
+    {
+        room_goto(global.currentstage[global.s])
+        show_message("Times Up!")
+        
+    }
+    else
+    {
+        show_message("Times Up!")
+        room_goto(GameOver)
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_OpenDoor">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Allows more bomb radius and Max bombs powerups to drop upon reaching Stage 3
+if global.s = 1 or global.s = 3
+{
+    global.maxbombup = false;
+    global.blastradiusup = false;
+}
+
+show_message("All right!")
+room_goto_next()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_TimeStop">
       <action>
         <libid>1</libid>
@@ -131,37 +200,6 @@ with instance_nearest(x,y,obj_MinusLife) {instance_destroy()}
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_OpenDoor">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Allows more bomb radius and Max bombs powerups to drop upon reaching Stage 3
-if global.s = 1 or global.s = 3
-{
-    global.maxbombup = false;
-    global.blastradiusup = false;
-}
-
-show_message("All right!")
-room_goto_next()
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_slowdown">
       <action>
         <libid>1</libid>
@@ -205,9 +243,10 @@ with obj_slowdown {instance_destroy()}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Adds extra life
+            <string>///Adds extra life if less than 5
 audio_play_sound(oneUp_sound, 2, false)
-if global.bomberlives &lt; 3{
+if global.bomberlives &lt; 5
+{
     global.bomberlives += 1;
 }
 
