@@ -18,6 +18,8 @@ if !place_meeting(x+64, y, obj_StopFlameWall)
     if !place_meeting (x+128, y, obj_StopFlameWall) and stopflame = false
     {
         instance_create(x+128, y, obj_explosion_h)
+        if place_meeting(x+128, y, obj_DestructibleObject)
+        stopflame = true
     }
     if !place_meeting (x+192, y, obj_StopFlameWall) and stopflame = false
     {
@@ -33,6 +35,8 @@ if !place_meeting(x-64, y, obj_StopFlameWall)
     if !place_meeting (x-128, y, obj_StopFlameWall) and stopflame = false
     {
         instance_create(x-128, y, obj_explosion_h)
+        if place_meeting(x-128, y, obj_DestructibleObject)
+        stopflame = true
     }
     if !place_meeting (x-192, y, obj_StopFlameWall) and stopflame = false
     {
@@ -48,6 +52,8 @@ if !place_meeting(x, y+64, obj_StopFlameWall)
     if !place_meeting (x, y+128, obj_StopFlameWall) and stopflame = false
     {
         instance_create(x, y+128, obj_explosion_v)
+        if place_meeting(x, y+128, obj_DestructibleObject)
+        stopflame = true
     }
     if !place_meeting (x, y+192, obj_StopFlameWall) and stopflame = false
     {
@@ -63,6 +69,8 @@ if !place_meeting(x, y-64, obj_StopFlameWall)
     if !place_meeting (x, y-128, obj_StopFlameWall) and stopflame = false
     {
         instance_create(x, y-128, obj_explosion_v)
+        if place_meeting(x, y-128, obj_DestructibleObject)
+        stopflame = true
     }
     if !place_meeting (x, y-192, obj_StopFlameWall) and stopflame = false
     {
