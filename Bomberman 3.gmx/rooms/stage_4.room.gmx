@@ -363,7 +363,6 @@ if global.s != 3
     <instance objName="obj_Chest" x="256" y="1152" name="inst_CBDC6E61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Chest" x="448" y="448" name="inst_D01331DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Chest" x="128" y="320" name="inst_1D14A0FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Frogman" x="256" y="448" name="inst_73E5CB7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Frogman" x="448" y="320" name="inst_A616C7DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Frogman" x="256" y="960" name="inst_3A0DADB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AngryTree" x="512" y="576" name="inst_39C980F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -374,6 +373,7 @@ if global.s != 3
     <instance objName="obj_Goblin" x="576" y="256" name="inst_F56C3742" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AngryTree" x="320" y="1344" name="inst_95B06076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_StageTimer" x="64" y="32" name="inst_1FCDF381" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hand" x="256" y="448" name="inst_7C022E22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="spr_stage_tileset" x="64" y="128" w="64" h="64" xo="136" yo="0" id="10000613" name="inst_94508B9E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

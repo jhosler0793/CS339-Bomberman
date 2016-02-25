@@ -297,7 +297,6 @@ if global.s != 2
     <instance objName="obj_Goblin" x="1216" y="512" name="inst_187C6654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Frogman" x="128" y="448" name="inst_6A3A2AF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Frogman" x="896" y="256" name="inst_32B086D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Frogman" x="1024" y="576" name="inst_F3533EA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall2" x="128" y="192" name="inst_193C6D68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall2" x="192" y="192" name="inst_E9740216" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall2" x="320" y="192" name="inst_BEBAD5B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -352,6 +351,7 @@ if global.s != 2
     <instance objName="obj_Wall2" x="1664" y="320" name="inst_674DE416" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall2" x="1664" y="192" name="inst_76E0971F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_StageTimer" x="64" y="32" name="inst_BA426E0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hand" x="992" y="576" name="inst_35492B13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="spr_stage_tileset" x="64" y="128" w="64" h="64" xo="136" yo="0" id="10000613" name="inst_94508B9E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
