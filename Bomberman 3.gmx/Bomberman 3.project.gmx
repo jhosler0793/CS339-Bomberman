@@ -229,7 +229,7 @@
     <object>objects\pro_Gen_Objects</object>
     <object>objects\proGenerator</object>
     <object>objects\obj_GameOverBomb</object>
-    <object>objects\obj_GameOverStart</object>
+    <object>objects\obj_Restart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>

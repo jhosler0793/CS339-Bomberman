@@ -140,8 +140,7 @@ if !alive
                 }
                 else
                 {
-                    show_message("Woops.....GAME OVER!")
-                    game_restart()
+                    room_goto(GameOver)
                 }
             }
         }

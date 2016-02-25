@@ -56,6 +56,7 @@
     <instance objName="obj_BomberKid_Win" x="448" y="544" name="inst_0596796A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_PrettyBomber_Win" x="576" y="544" name="inst_27C1958C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_PunkBomber_Win" x="704" y="544" name="inst_A9FE8F96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Restart" x="448" y="672" name="inst_9417E3CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_GameOverBomb" x="192" y="512" name="inst_722656A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GameOverBomb" x="704" y="512" name="inst_59FFB7D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Restart" x="448" y="640" name="inst_12C9FD37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
