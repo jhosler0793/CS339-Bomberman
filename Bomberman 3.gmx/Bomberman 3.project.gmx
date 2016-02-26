@@ -111,6 +111,7 @@
       <sprite>sprites\spr_1up</sprite>
       <sprite>sprites\spr_MinusLife</sprite>
       <sprite>sprites\spr_TimeStop</sprite>
+      <sprite>sprites\spr_AddScore</sprite>
     </sprites>
     <sprite>sprites\spr_Wall</sprite>
     <sprite>sprites\spr_StopFlameWall</sprite>
@@ -182,6 +183,7 @@
       <object>objects\obj_slowdown</object>
       <object>objects\obj_MinusLife</object>
       <object>objects\obj_TimeStop</object>
+      <object>objects\obj_AddScore</object>
     </objects>
     <objects name="Walls">
       <object>objects\obj_Wall</object>
@@ -241,6 +243,7 @@
     <object>objects\obj_Restart</object>
     <object>objects\obj_StageTimer</object>
     <object>objects\stageType_selector</object>
+    <object>objects\obj_ScoreKeeper</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>

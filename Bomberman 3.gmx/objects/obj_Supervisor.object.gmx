@@ -32,6 +32,7 @@ global.bomberlives = 5;
 global.char = 0;
 global.maxbombup = false;
 global.blastradiusup = false;
+global.maxscore = 0;
 </string>
           </argument>
         </arguments>
@@ -78,6 +79,10 @@ if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("5")
 if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("6"))
 {
     room_goto(stage_1_progen)
+}
+if keyboard_check_direct(vk_lcontrol) &amp;&amp; keyboard_check_pressed(ord("V"))
+{
+    room_goto(Victory)
 }
 </string>
           </argument>

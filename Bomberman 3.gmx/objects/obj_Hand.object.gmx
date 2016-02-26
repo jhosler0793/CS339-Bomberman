@@ -231,6 +231,7 @@ if alive
             <string>if alive
 {
     image_index = 0
+    global.maxscore += 1000
     alive = false
 }
 </string>

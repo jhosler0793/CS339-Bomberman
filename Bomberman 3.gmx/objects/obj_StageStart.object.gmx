@@ -31,6 +31,7 @@ global.addlife = false;
 global.slowdown = false;
 global.timestop = false;
 global.minuslife = false;
+global.addscore = false;
 </string>
           </argument>
         </arguments>

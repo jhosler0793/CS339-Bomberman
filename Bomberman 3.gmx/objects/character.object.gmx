@@ -113,6 +113,30 @@ global.s = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_AddScore">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.maxscore += 5000
+with obj_AddScore {instance_destroy()}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_OpenDoor">
       <action>
         <libid>1</libid>
@@ -137,8 +161,21 @@ if global.s = 1 or global.s = 3
     global.blastradiusup = false;
 }
 
+//Multiplies lives remaining by 1000 and adds to score
+global.maxscore += (global.bomberlives * 1000)
+
+//Multiples remaining seconds by 20 and remaining minutes by 1000 and adds to score
+global.maxscore += global.timescore
+
 show_message("All right!")
-room_goto_next()
+if global.s = 4
+{
+    room_goto(Victory)
+}
+else
+{
+    room_goto_next()
+}
 </string>
           </argument>
         </arguments>
@@ -388,6 +425,8 @@ draw_set_valign(fa_middle)
 draw_text(710,33,global.maxbombs)
 draw_text(825,33,global.blastradius)
 draw_text(590,33,global.bomberlives)
+draw_set_halign(fa_right)
+draw_text(308,33,global.maxscore)
 </string>
           </argument>
         </arguments>

@@ -23,31 +23,35 @@ else timestopdrop=obj_TimeStop
 if global.minuslife {minuslifedrop=noone}
 else minuslifedrop=obj_MinusLife
 
+if global.addscore {addscoredrop=noone}
+else addscoredrop=obj_AddScore
+
 //Power-up drop rates and items vary for each stage
 if global.s = 0
 {
     drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop,
-    noone, addlifedrop)
+    noone, addlifedrop, addscoredrop)
 }
 if global.s = 1
 {
     drop = choose(noone, speeddrop, noone, maxbombdrop, noone,
-    slowdowndrop, noone, addlifedrop, timestopdrop,)
+    slowdowndrop, noone, addlifedrop, timestopdrop, addscoredrop)
 }
 if global.s = 2
 {
     drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop, noone,
-    slowdowndrop, noone, addlifedrop, timestopdrop, minuslifedrop)
+    slowdowndrop, noone, addlifedrop, timestopdrop, minuslifedrop, addscoredrop)
 }
 if global.s = 3
 {
     drop = choose(noone, speeddrop, noone, maxbombdrop, noone,
-    slowdowndrop, noone, addlifedrop, noone, timestopdrop, noone, minuslifedrop, noone)
+    slowdowndrop, noone, addlifedrop, noone, timestopdrop, noone, minuslifedrop,
+    noone, addscoredrop)
 }
 if global.s = 4
 {
     drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop, noone,
-    slowdowndrop, noone, addlifedrop, timestopdrop, minuslifedrop)
+    slowdowndrop, noone, addlifedrop, timestopdrop, minuslifedrop, noone, addscoredrop)
 }
 
 if drop != noone
