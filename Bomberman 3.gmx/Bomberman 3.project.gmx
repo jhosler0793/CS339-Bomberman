@@ -277,8 +277,15 @@
     <room>rooms\Stage_5_Start</room>
     <room>rooms\stage_5</room>
     <room>rooms\Stag_1_Start_ProGen</room>
-    <room>rooms\stage_1_progen</room>
+    <room>rooms\Stage_1_progen</room>
     <room>rooms\Stage_2_Start_ProGen</room>
+    <room>rooms\Stage_2_ProGen</room>
+    <room>rooms\Stage_3_Start_ProGen</room>
+    <room>rooms\Stage_3_ProGen</room>
+    <room>rooms\Stage_4_Start_ProGen</room>
+    <room>rooms\Stage_4_ProGen</room>
+    <room>rooms\Stage_5_Start_ProGen</room>
+    <room>rooms\Start_5_ProGen</room>
     <room>rooms\GameOver</room>
     <room>rooms\Victory</room>
   </rooms>
