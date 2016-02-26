@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>128</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>if !audio_is_playing(menu_music)
+{audio_play_sound(menu_music,2,true)}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

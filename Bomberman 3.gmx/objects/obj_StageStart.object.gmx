@@ -25,13 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>countdown = 90;
+            <string>countdown = 125;
 global.speedup = false;
 global.addlife = false;
 global.slowdown = false;
 global.timestop = false;
 global.minuslife = false;
 global.addscore = false;
+
+audio_stop_all()
+if !audio_is_playing(stagestart_music)
+{
+    audio_play_sound(stagestart_music, 1, false)
+}
 </string>
           </argument>
         </arguments>

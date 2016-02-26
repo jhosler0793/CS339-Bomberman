@@ -48,7 +48,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart()
+            <string>if !audio_is_playing(menu_confirm_sound)
+{audio_play_sound(menu_confirm_sound, 1, false)}
+
+game_restart()
 </string>
           </argument>
         </arguments>

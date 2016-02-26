@@ -48,7 +48,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(CharSelect)
+            <string>if !audio_is_playing(menu_confirm_sound)
+{audio_play_sound(menu_confirm_sound, 1, false)}
+
+room_goto(CharSelect)
 </string>
           </argument>
         </arguments>

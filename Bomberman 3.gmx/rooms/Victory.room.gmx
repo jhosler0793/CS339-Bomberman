@@ -10,7 +10,11 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>audio_stop_all()
+if !audio_is_playing(victory_music)
+{
+    audio_play_sound(victory_music, 1, true)
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

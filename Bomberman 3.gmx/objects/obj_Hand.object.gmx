@@ -35,6 +35,8 @@ nearPowerup = false
 patrolTimer = random_range(15,30)
 
 
+
+
 </string>
           </argument>
         </arguments>
@@ -80,12 +82,21 @@ patrolTimer = random_range(15,30)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if alive
+            <string>closePowerup = instance_nearest(x,y,obj_PowerUp)
+
+if alive
 {
 //Vertical Movement
     if vertMovement &amp;&amp; patrolTimer &gt; 0
     {
-        ysp = dir * movespeed;
+        if instance_exists(obj_PowerUp)
+        {
+            mp_potential_step(closePowerup.x,closePowerup.y,2,false)
+        }
+        else
+        {
+            ysp = dir * movespeed;
+        }
         if place_meeting(x,y+ysp,obj_Wall)
         {
             while (!place_meeting(x,y+sign(ysp),obj_Wall)) {y += sign(ysp)}
@@ -106,7 +117,14 @@ patrolTimer = random_range(15,30)
 //Horizontal Movement
     if !vertMovement &amp;&amp; patrolTimer &gt; 0
     {
-        xsp = dir * movespeed;
+        if instance_exists(obj_PowerUp)
+        {
+            mp_potential_step(closePowerup.x,closePowerup.y,2,false)
+        }
+        else
+        {
+            xsp = dir * movespeed;
+        }
         if place_meeting(x+xsp,y,obj_Wall)
         {
             while (!place_meeting(x+sign(xsp),y,obj_Wall)) {x += sign(xsp)}
@@ -201,6 +219,10 @@ if alive
             <kind>1</kind>
             <string>if alive
 {
+    if !audio_is_playing(hand_sound)
+    {
+        audio_play_sound(hand_sound,2,false)
+    }
     with (instance_nearest(x, y, obj_PowerUp))
     {
     instance_destroy();
@@ -283,7 +305,7 @@ if !vertMovement
     }
 }
 //picks up powerup animation or grabs Bomberman
-if collision_rectangle(x+32,y+32,x-32,y-32,obj_PowerUp,false,true) 
+if collision_rectangle(x+48,y+48,x-48,y-48,obj_PowerUp,false,true) 
 or collision_rectangle(x+32,y+32,x-32,y-32,character,false,true)
 {
     {

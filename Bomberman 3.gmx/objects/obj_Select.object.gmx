@@ -38,6 +38,29 @@ global.mpos = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>charselection();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -61,6 +84,8 @@ move += max(keyboard_check_pressed(vk_right), keyboard_check_pressed(ord("D")), 
 
 if (move != 0)
 {
+    if !audio_is_playing(menu_select_sound)
+    {audio_play_sound(menu_select_sound, 1, false)}
     global.mpos += move;
     if (global.mpos &lt; 0) global.mpos = array_length_1d(char_name)-1;
     if (global.mpos &gt; array_length_1d(char_name)-1) global.mpos = 0;
@@ -71,7 +96,9 @@ push = max(keyboard_check_pressed(vk_space), keyboard_check_pressed(vk_enter), 0
 if (push = 1) 
 {
     image_blend = c_orange;
-    charselection();
+    if !audio_is_playing(menu_confirm_sound)
+    {audio_play_sound(menu_confirm_sound,1,false)}
+    if !alarm[0] {alarm[0]=15}
 }
 </string>
           </argument>

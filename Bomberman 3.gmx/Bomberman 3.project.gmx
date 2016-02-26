@@ -17,6 +17,19 @@
     <sound>sound\max_bombsUp_sound</sound>
     <sound>sound\blast_radiusUp_sound</sound>
     <sound>sound\oneUp_sound</sound>
+    <sound>sound\gameovermusic</sound>
+    <sound>sound\hitbyenemy</sound>
+    <sound>sound\esplode_pop</sound>
+    <sound>sound\menu_confirm_sound</sound>
+    <sound>sound\menu_select_sound</sound>
+    <sound>sound\addscore_sound</sound>
+    <sound>sound\minuslife_sound</sound>
+    <sound>sound\beatstage_sound</sound>
+    <sound>sound\timestop_sound</sound>
+    <sound>sound\menu_music</sound>
+    <sound>sound\stagestart_music</sound>
+    <sound>sound\victory_music</sound>
+    <sound>sound\hand_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Bomberman">
@@ -131,6 +144,7 @@
     <sprite>sprites\spr_Fountain</sprite>
     <sprite>sprites\spr_solidWall</sprite>
     <sprite>sprites\spr_GameOverBomb</sprite>
+    <sprite>sprites\spr_TitleBomber</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\spr_stage_tileset</background>
@@ -210,6 +224,7 @@
       <object>objects\character</object>
     </objects>
     <objects name="Win Screen">
+      <object>objects\obj_WinParent</object>
       <object>objects\obj_BomberKid_Win</object>
       <object>objects\obj_Bomberman_Win</object>
       <object>objects\obj_MexicanBomber_Win</object>
@@ -244,6 +259,7 @@
     <object>objects\obj_StageTimer</object>
     <object>objects\stageType_selector</object>
     <object>objects\obj_ScoreKeeper</object>
+    <object>objects\obj_TitleBomber</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>

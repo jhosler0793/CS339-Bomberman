@@ -10,15 +10,7 @@
   <persistent>0</persistent>
   <colour>8421376</colour>
   <showcolour>-1</showcolour>
-  <code>//stops select character music and plays the stage music
-
-audio_stop_sound(starting_music)
-if !audio_is_playing(stage_music)
-{
-    audio_play_sound(stage_music, 1, true)
-}
-
-//Current Stage
+  <code>//Current Stage
 
 global.s = 1</code>
   <enableViews>0</enableViews>
