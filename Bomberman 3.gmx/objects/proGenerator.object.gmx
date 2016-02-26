@@ -206,7 +206,7 @@ mapGenerator()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 draw_set_halign(fa_left)
 curX = startX
 curY = startY
@@ -219,6 +219,7 @@ for (myY = 0; myY &lt; maxY; myY++) {
     }
     curY = curY + blockSize
 }
+*/
 </string>
           </argument>
         </arguments>
