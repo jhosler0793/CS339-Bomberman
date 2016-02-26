@@ -53,7 +53,7 @@ global.currentstage[8] = Stage_4_Start_ProGen;
 global.currentstage[9] = Stage_5_Start_ProGen;
 global.s = 0;
 
-drawlives = global.maxlives
+drawlives = global.bomberlives
 </string>
           </argument>
         </arguments>
@@ -99,9 +99,9 @@ drawlives = global.maxlives
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.maxlives &gt;= 0
+            <string>if global.bomberlives &gt;= 0
 {
-    drawlives = global.maxlives
+    drawlives = global.bomberlives
 }
 else
 {drawlives = 0}

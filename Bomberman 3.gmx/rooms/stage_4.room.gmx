@@ -462,7 +462,7 @@ if global.s != 3
     <tile bgName="spr_stage_tileset" x="384" y="384" w="64" h="64" xo="68" yo="0" id="10000679" name="inst_F090BC9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="320" y="384" w="64" h="64" xo="68" yo="0" id="10000680" name="inst_12A7591E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="256" y="384" w="64" h="64" xo="68" yo="0" id="10000681" name="inst_FD15E328" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="spr_stage_tileset" x="224" y="416" w="64" h="64" xo="68" yo="0" id="10000682" name="inst_831B0DCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="spr_stage_tileset" x="192" y="384" w="64" h="64" xo="68" yo="0" id="10000682" name="inst_831B0DCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="128" y="384" w="64" h="64" xo="68" yo="0" id="10000683" name="inst_DB98EBA1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="64" y="384" w="64" h="64" xo="68" yo="0" id="10000684" name="inst_6A65BD6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="64" y="448" w="64" h="64" xo="68" yo="0" id="10000685" name="inst_E98C879D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

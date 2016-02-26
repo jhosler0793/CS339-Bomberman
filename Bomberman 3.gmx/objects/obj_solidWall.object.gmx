@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y, obj_Wall)
+            <string>mask_index = spr_Wall2
+
+instance_create(x,y, obj_Wall2)
 
 instance_create(x,y, obj_StopFlameWall)
 </string>
