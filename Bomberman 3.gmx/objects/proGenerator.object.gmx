@@ -59,7 +59,6 @@ myObject = noone
 
 //Control variables for the amount of objects to be spawned in
 if room == Stage_1_progen {
-
     numOfChest = 17
     numOfPanelChest = 3
     numOfWalls = 20
@@ -73,7 +72,62 @@ if room == Stage_1_progen {
     minDistance  = 1
 
 }
+else if room == Stage_2_ProGen {
+    numOfChest = 19
+    numOfPanelChest = 3
+    numOfWalls = 22
+    
+    maxEnemy = 4
+    numOfAngryTree = 1
+    numOfFrogMan = 2
+    numOfMenuBirdy = 0
+    numOfGoblin = 1
+    
+    minDistance  = 1
 
+}
+else if room == Stage_3_ProGen {
+    numOfChest = 20
+    numOfPanelChest = 3
+    numOfWalls = 23
+    
+    maxEnemy = 4
+    numOfAngryTree = 2
+    numOfFrogMan = 0
+    numOfMenuBirdy = 0
+    numOfGoblin = 2
+    
+    minDistance  = 1
+
+}
+else if room == Stage_4_ProGen {
+    numOfChest = 16
+    numOfPanelChest = 4
+    numOfWalls = 20
+    
+    maxEnemy = 4
+    numOfAngryTree = 1
+    numOfFrogMan = 0
+    numOfMenuBirdy = 0
+    numOfGoblin = 3
+    
+    minDistance  = 1
+
+}
+else if room == Start_5_ProGen {
+    numOfChest = 16
+    numOfPanelChest = 4
+    numOfWalls = 20
+    
+    maxEnemy = 4
+    numOfAngryTree = 1
+    numOfFrogMan = 0
+    numOfMenuBirdy = 0
+    numOfGoblin = 3
+    
+    minDistance  = 1
+
+}
 /*
     Searches the map area in the blocksize entered for instacnes of objects already on the map.
     Then it places strings into the matrix to represent the objects.

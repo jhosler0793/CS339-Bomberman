@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(15)
+            <string>room_goto(Stag_1_Start_ProGen)
 </string>
           </argument>
         </arguments>

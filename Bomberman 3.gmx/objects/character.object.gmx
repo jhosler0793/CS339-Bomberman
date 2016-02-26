@@ -103,7 +103,8 @@ global.s = 0;
     
     if global.bomberlives &gt; 0
     {
-        room_goto(global.currentstage[global.s])
+        //room_goto(global.currentstage[global.s])
+        room_goto_previous()
         show_message("Times Up!")
         
     }
