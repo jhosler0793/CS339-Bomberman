@@ -53,7 +53,33 @@ if global.s = 4
     drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop, noone,
     slowdowndrop, noone, addlifedrop, timestopdrop, minuslifedrop, noone, addscoredrop)
 }
-
+if global.s = 5
+{
+    drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop,
+    noone, addlifedrop, addscoredrop)
+}
+if global.s = 6
+{
+    drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop, noone,
+    slowdowndrop, noone, addlifedrop, timestopdrop, minuslifedrop, addscoredrop)
+}
+if global.s = 7
+{
+    drop = choose(noone, speeddrop, noone, maxbombdrop, noone,
+    slowdowndrop, noone, addlifedrop, noone, timestopdrop, noone, minuslifedrop,
+    noone, addscoredrop)
+}
+if global.s = 8
+{
+    drop = choose(noone, speeddrop, noone, maxbombdrop, noone,
+    slowdowndrop, noone, addlifedrop, noone, timestopdrop, noone, minuslifedrop,
+    noone, addscoredrop)
+}
+if global.s = 9
+{
+    drop = choose(noone, blastradiusdrop, noone, speeddrop, noone, maxbombdrop, noone,
+    slowdowndrop, noone, addlifedrop, timestopdrop, minuslifedrop, noone, addscoredrop)
+}
 if drop != noone
 {
     instance_create(x,y,drop)

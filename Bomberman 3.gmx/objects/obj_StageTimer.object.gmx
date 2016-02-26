@@ -55,7 +55,31 @@ if global.s = 4
 minutes = 3;
 seconds = 59;
 }
-
+if global.s = 5
+{
+minutes = 1;
+seconds = 30;
+}
+if global.s = 6
+{
+minutes = 1;
+seconds = 59;
+}
+if global.s = 7
+{
+minutes = 2;
+seconds = 59;
+}
+if global.s = 8
+{
+minutes = 3;
+seconds = 59;
+}
+if global.s = 9
+{
+minutes = 3;
+seconds = 59;
+}
 secstring = string(seconds);
 global.timescore = ((minutes * 1000) + (seconds * 20))
 </string>

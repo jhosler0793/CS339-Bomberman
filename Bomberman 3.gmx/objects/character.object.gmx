@@ -46,6 +46,11 @@ global.currentstage[1] = Stage_2_Start;
 global.currentstage[2] = Stage_3_Start;
 global.currentstage[3] = Stage_4_Start;
 global.currentstage[4] = Stage_5_Start;
+global.currentstage[5] = Stag_1_Start_ProGen;
+global.currentstage[6] = Stage_2_Start_ProGen;
+global.currentstage[7] = Stage_3_Start_ProGen;
+global.currentstage[8] = Stage_4_Start_ProGen;
+global.currentstage[9] = Stage_5_Start_ProGen;
 global.s = 0;
 </string>
           </argument>
@@ -134,7 +139,7 @@ global.s = 0;
 {audio_play_sound(beatstage_sound,1,false)}
 
 //Allows more bomb radius and Max bombs powerups to drop upon reaching Stage 3
-if global.s = 1 or global.s = 3
+if global.s = 1 or global.s = 3 or global.s = 7
 {
     global.maxbombup = false;
     global.blastradiusup = false;
@@ -147,7 +152,7 @@ global.maxscore += (global.bomberlives * 1000)
 global.maxscore += global.timescore
 
 show_message("All right!")
-if global.s = 4
+if global.s = 4 or global.s = 9
 {
     room_goto(Victory)
 }

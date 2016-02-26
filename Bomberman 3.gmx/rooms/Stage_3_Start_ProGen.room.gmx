@@ -11,7 +11,7 @@
   <colour>4227072</colour>
   <showcolour>-1</showcolour>
   <code>//Current Stage
-global.s = 2</code>
+global.s = 7</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
