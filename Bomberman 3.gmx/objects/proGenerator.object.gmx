@@ -58,7 +58,7 @@ myMatrix[] = 0
 myObject = noone
 
 //Control variables for the amount of objects to be spawned in
-if room == stage_1_progen {
+if room == Stage_1_progen {
 
     numOfChest = 17
     numOfPanelChest = 3
@@ -187,7 +187,7 @@ for (myY = 0; myY &lt; maxY; myY++) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart()
+            <string>room_goto_previous()
 </string>
           </argument>
         </arguments>
