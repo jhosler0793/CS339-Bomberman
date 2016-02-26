@@ -48,9 +48,9 @@ if !place_meeting(x-64, y, obj_StopFlameWall)
             instance_create(x-192, y, obj_explosion_h)
             if place_meeting(x-192, y, obj_DestructibleObject)
             stopflame = true
-            if !place_meeting (x+256, y, obj_StopFlameWall) and stopflame = false
+            if !place_meeting (x-256, y, obj_StopFlameWall) and stopflame = false
             {
-                instance_create(x+256, y, obj_explosion_left)
+                instance_create(x-256, y, obj_explosion_left)
             }
         }
     }

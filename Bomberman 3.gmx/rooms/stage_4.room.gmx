@@ -363,9 +363,9 @@ if global.s != 3
     <instance objName="obj_Chest" x="256" y="1152" name="inst_CBDC6E61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Chest" x="448" y="448" name="inst_D01331DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Chest" x="128" y="320" name="inst_1D14A0FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Frogman" x="448" y="320" name="inst_A616C7DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Frogman" x="192" y="576" name="inst_A616C7DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Frogman" x="256" y="960" name="inst_3A0DADB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_AngryTree" x="512" y="576" name="inst_39C980F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_AngryTree" x="544" y="544" name="inst_39C980F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AngryTree" x="576" y="832" name="inst_1342D951" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goblin" x="448" y="1216" name="inst_DD4F260F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goblin" x="384" y="896" name="inst_02FCEB39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -373,7 +373,7 @@ if global.s != 3
     <instance objName="obj_Goblin" x="576" y="256" name="inst_F56C3742" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_AngryTree" x="320" y="1344" name="inst_95B06076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_StageTimer" x="64" y="32" name="inst_1FCDF381" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Hand" x="256" y="448" name="inst_7C022E22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hand" x="704" y="384" name="inst_7C022E22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="spr_stage_tileset" x="64" y="128" w="64" h="64" xo="136" yo="0" id="10000613" name="inst_94508B9E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -424,7 +424,7 @@ if global.s != 3
     <tile bgName="spr_stage_tileset" x="384" y="384" w="64" h="64" xo="68" yo="0" id="10000679" name="inst_F090BC9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="320" y="384" w="64" h="64" xo="68" yo="0" id="10000680" name="inst_12A7591E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="256" y="384" w="64" h="64" xo="68" yo="0" id="10000681" name="inst_FD15E328" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="spr_stage_tileset" x="192" y="384" w="64" h="64" xo="68" yo="0" id="10000682" name="inst_831B0DCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="spr_stage_tileset" x="224" y="416" w="64" h="64" xo="68" yo="0" id="10000682" name="inst_831B0DCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="128" y="384" w="64" h="64" xo="68" yo="0" id="10000683" name="inst_DB98EBA1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="64" y="384" w="64" h="64" xo="68" yo="0" id="10000684" name="inst_6A65BD6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="spr_stage_tileset" x="64" y="448" w="64" h="64" xo="68" yo="0" id="10000685" name="inst_E98C879D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
